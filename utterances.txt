@@ -1,0 +1,7 @@
+ReadyIntent yes
+ReadyIntent sure
+ReadyIntent ready
+ContinueIntent done
+ContinueIntent skip
+RatingIntent {rating}
+RatingIntent it was {rating}

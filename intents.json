@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "ReadyIntent"
+    },
+    {
+      "intent": "ContinueIntent",
+      "slots": [
+        {
+          "name": "continue",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "RatingIntent",
+      "slots": [
+        {
+          "name": "rating",
+          "type": "LIST_OF_RATINGS"
+        }
+      ]
+    }
+  ]
+}
