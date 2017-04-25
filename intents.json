@@ -1,23 +1,11 @@
 {
   "intents": [
     {
-      "intent": "ReadyIntent"
-    },
-    {
-      "intent": "ContinueIntent",
+      "intent": "ExerciseOneIntent",
       "slots": [
         {
-          "name": "continue",
-          "type": "AMAZON.NUMBER"
-        }
-      ]
-    },
-    {
-      "intent": "RatingIntent",
-      "slots": [
-        {
-          "name": "rating",
-          "type": "LIST_OF_RATINGS"
+          "name": "todo",
+          "type": "LIST_OF_EXERCISE_OPTIONS"
         }
       ]
     }
