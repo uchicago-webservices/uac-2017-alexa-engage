@@ -13,6 +13,20 @@ ask = Ask(app, "/")
 
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
+# there is a problem here: i can't get the first row!
+# save to session?
+def exercise_data():
+	import csv
+	with open('exercises.csv') as csvfile:
+		reader = csv.DictReader(csvfile)
+		for row in reader:
+			if session.attributes['exercise_no'] == row['id']:
+				id = row['id']
+				title = row['title']
+				instructions = row['instructions']
+				image = row['image']
+				break
+	return row
 
 @ask.launch
 def launch():
@@ -22,29 +36,43 @@ def launch():
 	return question(msg)
 
 def introduce():
-	template = 'exercise_'+str(session.attributes['exercise_no'])+'_title'
-	text = render_template(template);
-	text = ' ' + text + ' Say Ready, Explain or Skip. '
+	exercise = exercise_data()
+	text = ' Exercise '+str(exercise['id'])+'. '+exercise['title']+' ' +render_template('exercise_options')
 	return text;
 
-@ask.intent("ExerciseOneIntent")
-def exercise_one(todo):
-	msg = ""
+@ask.intent("ExplainIntent")
+def explain(todo):
+	exercise = exercise_data()
 
-	if todo == 'ready':
-		msg = '1. 2. 3. 4. 5. 6. 7. 8. 9. 10. '
+	msg = exercise['instructions']
 
-	if todo == 'explain':
-		template = 'exercise_'+str(session.attributes['exercise_no'])+'_instructions'
-		msg = render_template(template);
+	msg = msg + render_template('exercise_options')
 
-	if session.attributes['exercise_no'] == session.attributes['exercise_total']:
-		msg = msg + ' You are done. Nice job!'
-		return statement(msg)
+	return question(msg)
+
+@ask.intent("ReadyIntent")
+def ready(todo):
+	exercise = exercise_data()
+
+	msg = '1. 2. 3. 4. 5. 6. 7. 8. 9. 10. '
 
 	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
 
+	if session.attributes['exercise_no'] >= session.attributes['exercise_total']:
+		return statement('You are done. Nice job!')
+
 	msg = msg + introduce()
+
+	return question(msg)
+
+@ask.intent("SkipIntent")
+def skip(todo):
+	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
+
+	if session.attributes['exercise_no'] >= session.attributes['exercise_total']:
+		return statement('You are done. Nice job!')
+
+	msg = introduce()
 
 	return question(msg)
 
