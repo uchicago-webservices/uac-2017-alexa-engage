@@ -13,7 +13,6 @@ ask = Ask(app, "/")
 
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
-# save to session?
 def exercise_data():
 	import csv
 	with open('exercises.csv') as csvfile:
