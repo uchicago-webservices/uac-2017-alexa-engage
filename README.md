@@ -27,10 +27,8 @@ To run:
 ## Instructions are too fast. ##
 You can add pauses with SSML text. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference. Flask-Ask doesn't seem to interpret text as SSML, though.
 
-## move data to table/csv ##
-Templates are a bit clumsy. 
-
 ## use cards for photos ##
+Alexa app doesn't load images.
 
 ## reprompt if alexa doesn't understand ##
 

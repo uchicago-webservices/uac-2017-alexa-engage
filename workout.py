@@ -13,7 +13,6 @@ ask = Ask(app, "/")
 
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
-# there is a problem here: i can't get the first row!
 # save to session?
 def exercise_data():
 	import csv
@@ -27,12 +26,6 @@ def exercise_data():
 				image = row['image']
 				return row
 	return
-
-	# import csv
-	# inputfile = csv.DictReader(open('exercises.csv'))
-	# exercise = {}
-	# for row in inputfile:
-	# 	if session.attributes['exercise_no'] == row['id']
 
 
 @ask.launch
@@ -49,7 +42,11 @@ def introduce(msg):
 
 	exercise = exercise_data()
 	text = msg+' Exercise '+str(exercise['id'])+'. '+exercise['title']+' '+render_template('exercise_options')
-	return question(text);
+	return question(text).standard_card(
+			title=exercise['title'],
+			text=exercise['image'],
+			small_image_url=exercise['image'],
+			large_image_url=exercise['image'])
 
 @ask.intent("ExerciseIntent")
 def exercise(todo):
