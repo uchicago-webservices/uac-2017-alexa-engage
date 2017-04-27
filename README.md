@@ -30,8 +30,6 @@ You can add pauses with SSML text. See https://developer.amazon.com/public/solut
 ## use cards for photos ##
 Alexa app doesn't load images.
 
-## reprompt if alexa doesn't understand ##
-
 ## save session so user can pick up on next exercise ##
 
 ## deploy and beta test ##

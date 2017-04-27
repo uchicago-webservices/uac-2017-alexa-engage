@@ -46,9 +46,12 @@ def introduce(msg):
 			text=exercise['image'],
 			small_image_url=exercise['image'],
 			large_image_url=exercise['image'])
-
+	
 @ask.intent("ExerciseIntent")
 def exercise(todo):
+	if todo != 'ready' and todo != 'explain' and todo != 'skip':
+		return question('I did not understand. '+' '+render_template('exercise_options'))
+
 	if todo == 'ready':
 		return ready()
 
