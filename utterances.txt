@@ -1,4 +1,1 @@
 ExerciseIntent {todo}
-ExplainIntent explain
-ReadyIntent ready
-SkipIntent skip

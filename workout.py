@@ -20,61 +20,71 @@ def exercise_data():
 	with open('exercises.csv') as csvfile:
 		reader = csv.DictReader(csvfile)
 		for row in reader:
-			if session.attributes['exercise_no'] == row['id']:
-				id = row['id']
+			if session.attributes['exercise_no'] == int(row['id']):
+				id = int(row['id'])
 				title = row['title']
 				instructions = row['instructions']
 				image = row['image']
-				break
-	return row
+				return row
+	return
+
+	# import csv
+	# inputfile = csv.DictReader(open('exercises.csv'))
+	# exercise = {}
+	# for row in inputfile:
+	# 	if session.attributes['exercise_no'] == row['id']
+
 
 @ask.launch
 def launch():
 	session.attributes['exercise_total'] = 2
-	session.attributes['exercise_no'] = 1
-	msg = render_template('welcome') + introduce()
-	return question(msg)
+	session.attributes['exercise_no'] = 0
+	return introduce(render_template('welcome'))
 
-def introduce():
+def introduce(msg):
+	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
+
+	if session.attributes['exercise_no'] > session.attributes['exercise_total']:
+		return statement(msg+' You are done. Nice job!')
+
 	exercise = exercise_data()
-	text = ' Exercise '+str(exercise['id'])+'. '+exercise['title']+' ' +render_template('exercise_options')
-	return text;
+	text = msg+' Exercise '+str(exercise['id'])+'. '+exercise['title']+' '+render_template('exercise_options')
+	return question(text);
 
-@ask.intent("ExplainIntent")
-def explain(todo):
+@ask.intent("ExerciseIntent")
+def exercise(todo):
+	if todo == 'ready':
+		return ready()
+
+	if todo == 'explain':
+		return explain()
+
+	if todo == 'skip':
+		return skip()
+
+	return
+
+
+def explain():
 	exercise = exercise_data()
 
 	msg = exercise['instructions']
 
-	msg = msg + render_template('exercise_options')
+	msg = msg+' '+render_template('exercise_options')
 
 	return question(msg)
 
-@ask.intent("ReadyIntent")
-def ready(todo):
+def ready():
 	exercise = exercise_data()
 
-	msg = '1. 2. 3. 4. 5. 6. 7. 8. 9. 10. '
+	msg = ' 10. 9. 8. 7. 6. 5. 4. 3. 2. 1. '
 
-	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
+	return introduce(msg)
 
-	if session.attributes['exercise_no'] >= session.attributes['exercise_total']:
-		return statement('You are done. Nice job!')
+def skip():
+	return introduce('')
 
-	msg = msg + introduce()
 
-	return question(msg)
-
-@ask.intent("SkipIntent")
-def skip(todo):
-	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
-
-	if session.attributes['exercise_no'] >= session.attributes['exercise_total']:
-		return statement('You are done. Nice job!')
-
-	msg = introduce()
-
-	return question(msg)
 
 @ask.intent("AMAZON.StopIntent")
 def stop():

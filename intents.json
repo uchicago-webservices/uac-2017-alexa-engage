@@ -1,13 +1,13 @@
 {
   "intents": [
     {
-      "intent": "ExplainIntent"
-    },
-    {
-      "intent": "ReadyIntent"
-    },
-    {
-      "intent": "SkipIntent"
+      "intent": "ExerciseIntent",
+      "slots":[
+        {
+          "name" : "todo",
+          "type" : "LIST_OF_EXERCISE_OPTIONS"
+        }
+      ]
     }
   ]
 }

@@ -19,7 +19,7 @@ To run:
 
 3. Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills set, Engage Workout skill, Configuration tab. For Service Endpoint Type, choose HTTPS and North America, and paste in the Forwarding URL from ngrok.
 
-4. Go to http://echosim.io/ and test with the phrase 'Engage Workout' or 'Alexa start engage workout'.
+4. Go to http://echosim.io/ and test with the phrase 'Alexa start engage'.
 
 
 # Issues and To-dos#
