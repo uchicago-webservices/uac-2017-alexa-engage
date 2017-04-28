@@ -90,6 +90,11 @@ def stop():
     return statement("Stopping")
 
 
+# @ask.session_ended
+# def session_ended():
+# 	log.debug('Session Ended')
+# 	return '', 200
+
 
 if __name__ == '__main__':
 
