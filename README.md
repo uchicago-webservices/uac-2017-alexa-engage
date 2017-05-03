@@ -19,20 +19,22 @@ To run:
 
 3. Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills set, Engage Workout skill, Configuration tab. For Service Endpoint Type, choose HTTPS and North America, and paste in the Forwarding URL from ngrok.
 
-4. Go to http://echosim.io/ and test with the phrase 'Alexa start engage'.
+4. Go to http://echosim.io/ and test with the phrase 'Alexa start engage' or 'start engage'.
 
 
 # Issues and To-dos#
 
 ## Instructions are too fast. ##
-You can add pauses with SSML text. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference. Flask-Ask doesn't seem to interpret text as SSML, though.
+You can add pauses with SSML text. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference.
 
-## use cards for photos ##
+How long will each exercise take to complete?
+
+## Use cards for photos. ##
 Alexa app doesn't load images.
 
-## save session so user can pick up on next exercise ##
+## Save a session so user can pick up on next exercise. ##
 
-## deploy and beta test ##
+## Deploy and beta test. ##
 
 
 # Deploy and Beta Test #
@@ -46,7 +48,7 @@ https://developer.amazon.com/blogs/post/Tx2EN8P2AHAHO6Y/How-to-Add-Beta-Testers-
 
 # References #
 
-Flask Ask: http://flask-ask.readthedocs.io/en
+Flask Ask: http://flask-ask.readthedocs.io/en/latest/
 
 SSML: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference
 
