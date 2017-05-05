@@ -30,7 +30,13 @@ You can add pauses with SSML text. See https://developer.amazon.com/public/solut
 How long will each exercise take to complete?
 
 ## Use cards for photos. ##
-Alexa app doesn't load images.
+Alexa app doesn't load images. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/providing-home-cards-for-the-amazon-alexa-app#common-issues-when-including-images-in-standard-cards.
+1. Host on S3.
+2. Make images public.
+3. Set up CORS. See http://docs.aws.amazon.com/AmazonS3/latest/user-guide/add-cors-configuration.html.
+
+## Reprompt user if he/she doesn't reply. ##
+Can't test this with echosim. See https://forums.developer.amazon.com/questions/44478/how-do-i-test-reprompt-message-with-simulator.html.
 
 ## Save a session so user can pick up on next exercise. ##
 

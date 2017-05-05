@@ -33,7 +33,7 @@ def launch():
 	session.attributes['exercise_no'] = 0
 	next()
 	msg = render_template('welcome')+introduce()
-	return question(msg)
+	return question(msg).reprompt(render_template('exercise_options'))
 
 def next():
 	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
@@ -61,18 +61,10 @@ def exercise(todo):
 
 		if (next() == False):
 			msg = msg + ' You are done. Nice job!'
-			return statement(msg).standard_card(
-				title=exercise['title'],
-				text=exercise['image'],
-				small_image_url=exercise['image'],
-				large_image_url=exercise['image'])
+			return statement(msg)
 
 		msg = msg + introduce()
-		return question(msg).standard_card(
-			title=exercise['title'],
-			text=exercise['image'],
-			small_image_url=exercise['image'],
-			large_image_url=exercise['image']).reprompt(render_template('exercise_options'))
+		return question(msg)
 
 	if todo == 'explain':
 		msg = explain()
@@ -80,7 +72,6 @@ def exercise(todo):
 		msg = '<speak>'+msg+'</speak>'
 		return question(msg).standard_card(
 			title=exercise['title'],
-			text=exercise['image'],
 			small_image_url=exercise['image'],
 			large_image_url=exercise['image']).reprompt(render_template('exercise_options'))
 
