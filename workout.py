@@ -76,18 +76,7 @@ def exercise(todo):
 
 	if todo == 'explain':
 		msg = explain()
-		msg = msg + ready()
-
-		if (next() == False):
-			msg = msg + ' You are done. Nice job!'
-			msg = '<speak>'+msg+'</speak>'
-			return statement(msg).standard_card(
-				title=exercise['title'],
-				text=exercise['image'],
-				small_image_url=exercise['image'],
-				large_image_url=exercise['image'])
 		
-		msg = msg + introduce()
 		msg = '<speak>'+msg+'</speak>'
 		return question(msg).standard_card(
 			title=exercise['title'],
@@ -121,8 +110,6 @@ def ready():
 
 	return msg
 
-# def skip():
-# 	return ''
 
 
 
