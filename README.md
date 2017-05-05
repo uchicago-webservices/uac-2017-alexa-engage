@@ -56,9 +56,23 @@ You might get this error, but it will still work.
 
 # Deploy and Beta Test #
 
-https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa
+For the first time, set up dependencies for Zappa, AWS CLI, etc. See https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa.
 
-Add a tester of your skill with these instructions.
+Then deploy from your project's directory.
+
+	$ virtualenv venv
+	$ source venv/bin/activate
+	(venv) $ pip install flask-ask zappa requests awscli
+	(venv) $ pip install -U botocore
+	(venv) $ aws configure
+	(venv) $ zappa init
+	(venv) $ zappa deploy dev
+
+Make note of the URL in the output. It looks something like https://625ff9gf9k.execute-api.us-east-1.amazonaws.com/dev.
+
+Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills. Set up a new skill. For Service Endpoint Type, choose HTTPS and North America, and paste in the Zappa URL.
+
+## Add a tester of your skill with these instructions. ##
 
 https://developer.amazon.com/blogs/post/Tx2EN8P2AHAHO6Y/How-to-Add-Beta-Testers-to-Your-Skills-Before-You-Publish
 
