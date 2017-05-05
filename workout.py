@@ -61,9 +61,11 @@ def exercise(todo):
 
 		if (next() == False):
 			msg = msg + ' You are done. Nice job!'
+			msg = '<speak>'+msg+'</speak>'
 			return statement(msg)
 
 		msg = msg + introduce()
+		msg = '<speak>'+msg+'</speak>'
 		return question(msg)
 
 	if todo == 'explain':
@@ -96,8 +98,7 @@ def explain():
 def ready():
 	exercise = session.attributes['exercise']
 
-	# todo: add audio file here
-	msg = ' 3. 2. 1. '
+	msg = '<audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/Ticking_Clock-KevanGC-1934595011-converted.mp3" />'
 
 	return msg
 

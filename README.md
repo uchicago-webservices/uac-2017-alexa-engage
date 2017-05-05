@@ -38,6 +38,17 @@ Alexa app doesn't load images. See https://developer.amazon.com/public/solutions
 ## Reprompt user if he/she doesn't reply. ##
 Can't test this with echosim. See https://forums.developer.amazon.com/questions/44478/how-do-i-test-reprompt-message-with-simulator.html.
 
+## Add audio for exercise countdown. ##
+Convert pm3 files. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#h3_converting_mp3.
+
+	$ ffmpeg -i <input-file> -ac 2 -codec:a libmp3lame -b:a 48k -ar 16000 <output-file.mp3>
+
+You might get this error, but it will still work.
+
+	[mp3 @ 0x7ff4dc803a00] Header missing
+	Error while decoding stream #0:0: Invalid data found when processing input
+
+
 ## Save a session so user can pick up on next exercise. ##
 
 ## Deploy and beta test. ##
