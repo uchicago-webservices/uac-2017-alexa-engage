@@ -1,13 +1,7 @@
 {
   "intents": [
     {
-      "intent": "ExerciseIntent",
-      "slots":[
-        {
-          "name" : "todo",
-          "type" : "LIST_OF_EXERCISE_OPTIONS"
-        }
-      ]
+      "intent": "ReadyIntent"
     },
     {
       "intent" : "AMAZON.StopIntent"

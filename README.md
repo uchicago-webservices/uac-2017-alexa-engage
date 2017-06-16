@@ -21,6 +21,8 @@ To run:
 
 4. Go to http://echosim.io/ and test with the phrase 'Alexa start engage' or 'start engage'.
 
+If you change data or templates, you will need to stop and restart the python script. You do not need to restart ngrok.
+
 
 # Issues and To-dos#
 

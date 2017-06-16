@@ -1,4 +1,0 @@
-LIST_OF_RATINGS
-easy
-hard
-just right

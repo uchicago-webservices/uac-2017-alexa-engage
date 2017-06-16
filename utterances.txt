@@ -1,1 +1,6 @@
-ExerciseIntent {todo}
+ReadyIntent ready
+ReadyIntent yes
+ReadyIntent go
+ReadyIntent next
+ReadyIntent skip
+ReadyIntent O K
