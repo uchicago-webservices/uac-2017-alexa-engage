@@ -1,4 +1,4 @@
-welcome: Lets get moving! Ready to exercise?
+welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our workout, you can say Ready, Skip, or Stop, at any time.
 
 exercise_options: Say Ready or Skip.
 
