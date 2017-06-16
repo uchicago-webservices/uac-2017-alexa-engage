@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "app_function": "workout.app", 
+        "aws_region": "us-east-1", 
+        "profile_name": "default", 
+        "s3_bucket": "zappa-293ed8c4d"
+    }
+}

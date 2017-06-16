@@ -68,6 +68,12 @@ Then deploy from your project's directory.
 	(venv) $ zappa init
 	(venv) $ zappa deploy dev
 
+To update, you don't need to do most of the set-up steps. Just do these:
+
+	$ virtualenv venv
+	$ source venv/bin/activate
+	$ zappa update dev
+
 Make note of the URL in the output. It looks something like https://625ff9gf9k.execute-api.us-east-1.amazonaws.com/dev.
 
 Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills. Set up a new skill. For Service Endpoint Type, choose HTTPS and North America, and paste in the Zappa URL.
