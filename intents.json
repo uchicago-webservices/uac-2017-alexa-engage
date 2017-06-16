@@ -4,6 +4,15 @@
       "intent": "ReadyIntent"
     },
     {
+      "intent": "GoDirectlyIntent",
+      "slots": [
+      	{
+      	  "name": "exercise_no",
+      	  "type": "AMAZON.NUMBER"
+      	}
+      ]
+    },
+    {
       "intent" : "AMAZON.StopIntent"
     }
   ]

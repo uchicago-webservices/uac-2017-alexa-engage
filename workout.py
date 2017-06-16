@@ -55,6 +55,21 @@ def ready():
 	return question(msg).reprompt(render_template('exercise_options'))
 
 
+@ask.intent("GoDirectlyIntent")
+def godirectly(exercise_no):
+	session.attributes['exercise_no'] = int(exercise_no) - 1
+	msg = ''
+
+	if (next() == False):
+		msg = msg+' '+render_template('done')
+		msg = '<speak>'+msg+'</speak>'
+		return statement(msg)
+
+	msg = msg+exercise_message()+' '+render_template('continue_prompt')
+	msg = '<speak>'+msg+'</speak>'
+	return question(msg).reprompt(render_template('exercise_options'))
+
+
 @ask.intent("AMAZON.StopIntent")
 def stop():
     return statement(render_template('stop'))
