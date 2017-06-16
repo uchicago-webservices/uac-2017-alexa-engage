@@ -1,12 +1,15 @@
 {
   "intents": [
     {
-      "intent": "ExerciseIntent",
-      "slots":[
-        {
-          "name" : "todo",
-          "type" : "LIST_OF_EXERCISE_OPTIONS"
-        }
+      "intent": "ReadyIntent"
+    },
+    {
+      "intent": "GoDirectlyIntent",
+      "slots": [
+      	{
+      	  "name": "exercise_no",
+      	  "type": "AMAZON.NUMBER"
+      	}
       ]
     },
     {
