@@ -80,6 +80,8 @@ Make note of the URL in the output. It looks something like https://625ff9gf9k.e
 
 Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills. Set up a new skill. For Service Endpoint Type, choose HTTPS and North America, and paste in the Zappa URL.
 
+If you have trouble deploying again (maybe you get an ImportError), trying using venv.zip instead of the venv directory you created with the above instructions.
+
 ## Add a tester of your skill with these instructions. ##
 
 https://developer.amazon.com/blogs/post/Tx2EN8P2AHAHO6Y/How-to-Add-Beta-Testers-to-Your-Skills-Before-You-Publish
