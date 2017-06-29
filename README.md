@@ -56,7 +56,7 @@ You might get this error, but it will still work.
 ## Deploy and beta test. ##
 
 
-# "Production" Deployment and Beta Testing #
+# Beta Deployment and Testing #
 
 For the first time, set up dependencies for Zappa, AWS CLI, etc. See https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa.
 
@@ -70,7 +70,7 @@ Then deploy from your project's directory. Here are instructions for the very fi
 	(venv) $ zappa init
 	(venv) $ zappa deploy dev
 
-To update, you don't need to do most of the set-up steps. Just do these:
+To update, you don't need to do most of the set-up steps. Just do these from the project root:
 
 	$ virtualenv venv
 	$ source venv/bin/activate
@@ -85,6 +85,24 @@ If you have trouble deploying again (maybe you get an ImportError), trying using
 ## Add a tester of your skill with these instructions. ##
 
 https://developer.amazon.com/blogs/post/Tx2EN8P2AHAHO6Y/How-to-Add-Beta-Testers-to-Your-Skills-Before-You-Publish
+
+
+# Prod Deployment #
+
+I deployed a prod version of this skill on 6/29/2017 in order to test the Amazon submission and review process.
+
+	$ virtualenv venv
+	$ source venv/bin/activate
+	$ zappa update prod
+
+While under review, code changes cannot be made. The skill will have to be withdrawn first.
+
+To make changes in the future:
+
+	$ virtualenv venv
+	$ source venv/bin/activate
+	$ zappa update prod
+
 
 
 # References #
