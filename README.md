@@ -1,4 +1,4 @@
-# Simple workout #
+# Local Development #
 
 Built with guidance from 
 
@@ -32,7 +32,7 @@ You can add pauses with SSML text. See https://developer.amazon.com/public/solut
 How long will each exercise take to complete?
 
 ## Use cards for photos. ##
-Alexa app doesn't load images. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/providing-home-cards-for-the-amazon-alexa-app#common-issues-when-including-images-in-standard-cards.
+This was deemed not very useful by the EngAGE team; maybe revisit if using Echo Show. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/providing-home-cards-for-the-amazon-alexa-app#common-issues-when-including-images-in-standard-cards.
 1. Host on S3.
 2. Make images public.
 3. Set up CORS. See http://docs.aws.amazon.com/AmazonS3/latest/user-guide/add-cors-configuration.html.
@@ -56,7 +56,7 @@ You might get this error, but it will still work.
 ## Deploy and beta test. ##
 
 
-# Deploy and Beta Test #
+# "Production" Deployment and Beta Testing #
 
 For the first time, set up dependencies for Zappa, AWS CLI, etc. See https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa.
 
