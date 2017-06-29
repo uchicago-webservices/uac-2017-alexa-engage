@@ -60,7 +60,7 @@ You might get this error, but it will still work.
 
 For the first time, set up dependencies for Zappa, AWS CLI, etc. See https://developer.amazon.com/blogs/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa.
 
-Then deploy from your project's directory.
+Then deploy from your project's directory. Here are instructions for the very first deployment.
 
 	$ virtualenv venv
 	$ source venv/bin/activate
