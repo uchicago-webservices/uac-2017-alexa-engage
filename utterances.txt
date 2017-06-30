@@ -1,8 +1,3 @@
-ReadyIntent ready
-ReadyIntent yes
-ReadyIntent go
-ReadyIntent next
-ReadyIntent O K
-ReadyIntent skip
+ReadyIntent {phrase}
 GoDirectlyIntent go to number {exercise_no}
 GoDirectlyIntent number {exercise_no}

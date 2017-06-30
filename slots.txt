@@ -1,0 +1,8 @@
+READY_PHRASES
+
+ready
+yes
+go
+next
+O K
+skip

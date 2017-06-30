@@ -1,7 +1,13 @@
 {
   "intents": [
     {
-      "intent": "ReadyIntent"
+      "intent": "ReadyIntent",
+      "slots": [
+        {
+          "name": "phrase",
+          "type": "READY_PHRASES"
+        }
+      ]
     },
     {
       "intent": "GoDirectlyIntent",

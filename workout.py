@@ -44,7 +44,13 @@ def exercise_message():
 	
 
 @ask.intent("ReadyIntent")
-def ready():
+def ready(phrase):
+	acceptable_phrases = ['ready','yes','go','next','OK','skip']
+	if (phrase not in acceptable_phrases):
+		msg = render_template('misunderstand')+' '+render_template('exercise_options')
+		msg = '<speak>'+msg+'</speak>'
+		return question(msg).reprompt(render_template('continue_prompt'))
+
 	exercise_no = session.attributes['exercise_no']
 	msg = ''
 
@@ -61,6 +67,16 @@ def ready():
 @ask.intent("GoDirectlyIntent")
 def godirectly(exercise_no):
 	start_session()
+
+	if (exercise_no is None):
+		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
+		msg = '<speak>'+msg+'</speak>'
+		return question(msg).reprompt(render_template('exercise_options'))
+
+	if (exercise_no.isdigit() == False):
+		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
+		msg = '<speak>'+msg+'</speak>'
+		return question(msg).reprompt(render_template('exercise_options'))
 
 	session.attributes['exercise_no'] = int(exercise_no) - 1
 	msg = ''
