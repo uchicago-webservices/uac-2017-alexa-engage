@@ -79,6 +79,11 @@ def godirectly(exercise_no):
 def stop():
     return statement(render_template('stop'))
 
+@ask.intent("AMAZON.HelpIntent")
+def help():
+	msg = render_template('help')+' '+render_template('continue_prompt')
+	msg = '<speak>'+msg+'</speak>'
+	return question(msg).reprompt(render_template('exercise_options'))
 
 # @ask.session_ended
 # def session_ended():

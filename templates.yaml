@@ -2,7 +2,7 @@ welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our worko
 
 exercise_options: Say Ready or Skip.
 
-continue_prompt: <break time="5s"/> Are you ready to continue?. 
+continue_prompt: <break time="5s"/> Are you ready to continue?
 
 ex_1: Find a sturdy chair to help you balance on one <emphasis level="reduced">foot</emphasis>. 
 
@@ -13,3 +13,5 @@ ex_3: Now lets balance on the other <emphasis level="reduced">foot</emphasis>. <
 done: You are done. Lets exercise again soon!
 
 stop: OK. Lets do this again soon!
+
+help: <emphasis level="reduced">Engage</emphasis> Workout, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> To quit the workout at any time, say Stop. <break time="1s"/> To go back to your workout now, say Ready.
