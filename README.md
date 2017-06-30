@@ -5,7 +5,7 @@ Built with guidance from
 https://alexatutorial.com/flask-ask/
 https://alexatutorial.com/2
 
-It works with a unique skill name, e.g., 'engage workout'.
+The the Alexa page in https://developer.amazon.com for the invocation names for the dev, beta and prod skills.
 
 To run:
 
@@ -103,6 +103,14 @@ To make changes in the future:
 	$ source venv/bin/activate
 	$ zappa update prod
 
+
+# Troubleshooting #
+
+To view debugging in your Lambda function:
+
+	$ virtualenv venv
+	$ source venv/bin/activate
+	$ zappa tail dev
 
 
 # References #
