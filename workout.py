@@ -79,6 +79,12 @@ def godirectly(exercise_no):
 def stop():
     return statement(render_template('stop'))
 
+
+@ask.intent("AMAZON.CancelIntent")
+def cancel():
+    return statement(render_template('stop'))
+
+
 @ask.intent("AMAZON.HelpIntent")
 def help():
 	msg = render_template('help')+' '+render_template('continue_prompt')
