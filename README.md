@@ -103,6 +103,8 @@ To make changes in the future:
 	$ source venv/bin/activate
 	$ zappa update prod
 
+See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-submission-checklist for certification guidelines.
+
 
 # Troubleshooting #
 
