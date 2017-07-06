@@ -78,6 +78,11 @@ def godirectly(exercise_no):
 		msg = '<speak>'+msg+'</speak>'
 		return question(msg).reprompt(render_template('exercise_options'))
 
+	if (int(exercise_no) < 1 or int(exercise_no) > session.attributes['exercise_total']):
+		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
+		msg = '<speak>'+msg+'</speak>'
+		return question(msg).reprompt(render_template('exercise_options'))
+
 	session.attributes['exercise_no'] = int(exercise_no) - 1
 	msg = ''
 
