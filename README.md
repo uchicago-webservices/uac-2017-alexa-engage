@@ -128,7 +128,7 @@ I have already set up a zappa service user "EnageAlexaZappaDeveloper".
 
 	$ virtualenv venv
 	$ source venv/bin/activate
-	$ zappa update prod
+	$ zappa deploy prod
 
 To make changes in the future:
 
@@ -138,7 +138,7 @@ To make changes in the future:
 
 ## Certification ##
 
-I deployed a prod version of this skill on 6/29/2017 in order to test the Amazon submission and review process. While under review, code changes cannot be made. The skill will have to be withdrawn first.
+I deployed a prod version of this skill in order to test the Amazon certification process. While under review, code changes cannot be made. The skill will have to be withdrawn first.
 
 See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-submission-checklist for certification guidelines.
 
