@@ -1,6 +1,4 @@
-import logging
-
-from random import randint
+import logging, time
 
 from flask import Flask, render_template
 
@@ -14,12 +12,17 @@ ask = Ask(app, "/")
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
-def load_exercise_data():		
+def load_exercise_data():
+	routine = 'Monday'
+	day_of_week = time.strftime("%A")	
+	if (day_of_week in ['Tuesday','Thursday','Saturday']):
+		routine = 'Tuesday'
+
 	import csv		
  	with open('exercises.csv') as csvfile:		
 		reader = csv.DictReader(csvfile)
 		for row in reader:		
-			if row['day_of_week'] == 'Monday':
+			if row['routine'] == routine:
 				session.attributes['exercises'].append(row)
 	return
 
