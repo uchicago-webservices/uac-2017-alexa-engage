@@ -14,6 +14,15 @@ ask = Ask(app, "/")
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
+def load_exercise_data():		
+	import csv		
+ 	with open('exercises.csv') as csvfile:		
+		reader = csv.DictReader(csvfile)
+		for row in reader:		
+			if row['day_of_week'] == 'Monday':
+				session.attributes['exercises'].append(row)
+	return
+
 @ask.launch
 def launch():
 	start_session()
@@ -23,8 +32,10 @@ def launch():
 	return question(msg).reprompt(render_template('exercise_options'))
 
 def start_session():
-	session.attributes['exercise_total'] = 3
 	session.attributes['exercise_no'] = 0
+	session.attributes['exercises'] = []
+	load_exercise_data()
+	session.attributes['exercise_total'] = len(session.attributes['exercises'])
 	return	
 
 def next():
@@ -37,8 +48,8 @@ def next():
 
 
 def exercise_message():
-	exercise_no = session.attributes['exercise_no']
-	template_name = 'ex_'+`exercise_no`
+	exercise_no = session.attributes['exercise_no'] - 1
+	template_name = session.attributes['exercises'][exercise_no]['template_name']
 	msg = ' '+render_template(template_name)
 	return msg
 	
