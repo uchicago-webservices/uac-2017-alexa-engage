@@ -26,6 +26,9 @@ def load_exercise_data():
 				session.attributes['exercises'].append(row)
 	return
 
+def photo_url_prefix():
+	return 'https://s3.amazonaws.com/engage-alexa-exercise-photos/'
+
 @ask.launch
 def launch():
 	start_session()
@@ -50,20 +53,26 @@ def next():
 	return True
 
 
-def exercise_message():
+def exercise_question():
 	exercise_no = session.attributes['exercise_no'] - 1
 	template_name = session.attributes['exercises'][exercise_no]['template_name']
 	msg = ' '+render_template(template_name)
-	return msg
-	
+	msg = msg+' '+render_template('continue_prompt')
+	msg = '<speak>'+msg+'</speak>'
+	return question(msg).reprompt(render_template('exercise_options'))	
+
+
+def misunderstand_question():
+	msg = render_template('misunderstand')+' '+render_template('continue_prompt')
+	msg = '<speak>'+msg+'</speak>'
+	return question(msg).reprompt(render_template('exercise_options'))
+
 
 @ask.intent("ReadyIntent")
 def ready(phrase):
 	acceptable_phrases = ['ready','yes','go','next','OK','skip']
 	if (phrase not in acceptable_phrases):
-		msg = render_template('misunderstand')+' '+render_template('exercise_options')
-		msg = '<speak>'+msg+'</speak>'
-		return question(msg).reprompt(render_template('continue_prompt'))
+		return misunderstand_question()
 
 	exercise_no = session.attributes['exercise_no']
 	msg = ''
@@ -73,9 +82,7 @@ def ready(phrase):
 		msg = '<speak>'+msg+'</speak>'
 		return statement(msg)
 
-	msg = msg+exercise_message()+' '+render_template('continue_prompt')
-	msg = '<speak>'+msg+'</speak>'
-	return question(msg).reprompt(render_template('exercise_options'))
+	return exercise_question()
 
 
 @ask.intent("GoDirectlyIntent")
@@ -83,19 +90,13 @@ def godirectly(exercise_no):
 	start_session()
 
 	if (exercise_no is None):
-		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
-		msg = '<speak>'+msg+'</speak>'
-		return question(msg).reprompt(render_template('exercise_options'))
+		return misunderstand_question()
 
 	if (exercise_no.isdigit() == False):
-		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
-		msg = '<speak>'+msg+'</speak>'
-		return question(msg).reprompt(render_template('exercise_options'))
+		return misunderstand_question()
 
 	if (int(exercise_no) < 1 or int(exercise_no) > session.attributes['exercise_total']):
-		msg = render_template('misunderstand')+' '+render_template('continue_prompt')
-		msg = '<speak>'+msg+'</speak>'
-		return question(msg).reprompt(render_template('exercise_options'))
+		return misunderstand_question()
 
 	session.attributes['exercise_no'] = int(exercise_no) - 1
 	msg = ''
@@ -105,9 +106,7 @@ def godirectly(exercise_no):
 		msg = '<speak>'+msg+'</speak>'
 		return statement(msg)
 
-	msg = msg+exercise_message()+' '+render_template('continue_prompt')
-	msg = '<speak>'+msg+'</speak>'
-	return question(msg).reprompt(render_template('exercise_options'))
+	return exercise_question()
 
 
 @ask.intent("AMAZON.StopIntent")
