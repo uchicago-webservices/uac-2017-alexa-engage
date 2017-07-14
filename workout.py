@@ -78,7 +78,10 @@ def exercise_question():
 def misunderstand_question():
 	msg = render_template('misunderstand')+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
-	return question(msg).reprompt(render_template('exercise_options'))
+	return question(msg).simple_card(
+		title="EngAGE Exercise didn't understand", 
+		content='"READY" or "OK" to go to the next exercise.\n"STOP" to quit at any time.\n"HELP" for instructions.'
+		).reprompt(render_template('exercise_options'))
 
 
 @ask.intent("ReadyIntent")
