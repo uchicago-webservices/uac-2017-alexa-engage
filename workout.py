@@ -136,7 +136,13 @@ def cancel():
 def help():
 	msg = render_template('help')+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
-	return question(msg).reprompt(render_template('exercise_options'))
+	return question(msg).simple_card(
+		title='Help with EngAGE Exercise', 
+		content='"READY" or "OK" to go to the next exercise.\n"STOP" to quit at any time.'
+		).reprompt(render_template('exercise_options'))
+
+
+
 
 # @ask.session_ended
 # def session_ended():
