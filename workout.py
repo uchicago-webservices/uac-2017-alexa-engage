@@ -13,7 +13,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 def load_exercise_data():
-	routine = 'Tuesday'
+	routine = 'Monday'
 	day_of_week = time.strftime("%A")	
 	if (day_of_week in ['Tuesday','Thursday','Saturday']):
 		routine = 'Tuesday'
@@ -29,28 +29,6 @@ def load_exercise_data():
 
 def photo_url_prefix():
 	return 'https://s3.amazonaws.com/engage-alexa-exercise-photos/'
-
-
-@ask.launch
-def launch():
-	start_session()
-	return ready('OK')
-
-
-def start_session():
-	session.attributes['exercise_no'] = 0
-	session.attributes['exercises'] = []
-	load_exercise_data()
-	session.attributes['exercise_total'] = len(session.attributes['exercises'])
-	return	
-
-def next():
-	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
-
-	if session.attributes['exercise_no'] > session.attributes['exercise_total']:
-		return False
-	
-	return True
 
 
 def exercise_question():
@@ -83,6 +61,28 @@ def misunderstand_question():
 		title="EngAGE Exercise didn't understand", 
 		content='"READY" or "OK" to go to the next exercise.\n"STOP" to quit at any time.\n"HELP" for instructions.'
 		).reprompt(render_template('exercise_options'))
+
+
+def start_session():
+	session.attributes['exercise_no'] = 0
+	session.attributes['exercises'] = []
+	load_exercise_data()
+	session.attributes['exercise_total'] = len(session.attributes['exercises'])
+	return	
+
+def next():
+	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
+
+	if session.attributes['exercise_no'] > session.attributes['exercise_total']:
+		return False
+	
+	return True
+
+
+@ask.launch
+def launch():
+	start_session()
+	return ready('OK')
 
 
 @ask.intent("ReadyIntent")
