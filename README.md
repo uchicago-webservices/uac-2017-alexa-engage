@@ -28,7 +28,7 @@ You can add pauses with SSML text. See https://developer.amazon.com/public/solut
 How long will each exercise take to complete?
 
 ### Use cards for photos. ###
-This was deemed not very useful by the EngAGE team; maybe revisit if using Echo Show. See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/providing-home-cards-for-the-amazon-alexa-app#common-issues-when-including-images-in-standard-cards.
+See https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/providing-home-cards-for-the-amazon-alexa-app#common-issues-when-including-images-in-standard-cards.
 1. Host on S3.
 2. Make images public.
 3. Set up CORS. See http://docs.aws.amazon.com/AmazonS3/latest/user-guide/add-cors-configuration.html.
