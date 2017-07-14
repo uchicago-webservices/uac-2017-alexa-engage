@@ -133,5 +133,7 @@ def help():
 
 
 if __name__ == '__main__':
-
+	# We don't want to keep the line below forever.
+	# Waiting on resolution to https://github.com/johnwheeler/flask-ask/issues/152.
+    # app.config['ASK_VERIFY_REQUESTS'] = False 
     app.run(debug=True)
