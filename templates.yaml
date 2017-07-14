@@ -1,8 +1,10 @@
-welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Skip, or Stop, at any time.
-
 exercise_options: Say Ready or Skip.
 
 continue_prompt: <break time="5s"/> Are you ready to continue?
+
+monday_intro: Lets get moving! Today we will stand on one foot, do wall push-ups, and do back stretches. For todays exercises, you will need a chair and a wall. <break time="5s"/> Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Skip, or Stop, at any time.
+
+tuesday_intro: Welcome to Engage exercise! We are going to walk heel to toe, do arm curls, and do neck stretches. Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance. <break time="5s"/> Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Skip, or Stop, at any time.
 
 stand_on_one_foot_1: Find a sturdy chair to help you balance on one <emphasis level="reduced">foot</emphasis>. 
 

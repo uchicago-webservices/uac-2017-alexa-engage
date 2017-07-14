@@ -13,7 +13,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 def load_exercise_data():
-	routine = 'Monday'
+	routine = 'Tuesday'
 	day_of_week = time.strftime("%A")	
 	if (day_of_week in ['Tuesday','Thursday','Saturday']):
 		routine = 'Tuesday'
@@ -26,16 +26,16 @@ def load_exercise_data():
 				session.attributes['exercises'].append(row)
 	return
 
+
 def photo_url_prefix():
 	return 'https://s3.amazonaws.com/engage-alexa-exercise-photos/'
+
 
 @ask.launch
 def launch():
 	start_session()
+	return ready('OK')
 
-	msg = render_template('welcome')+' '+render_template('continue_prompt')
-	msg = '<speak>'+msg+'</speak>'
-	return question(msg).reprompt(render_template('exercise_options'))
 
 def start_session():
 	session.attributes['exercise_no'] = 0
@@ -74,6 +74,7 @@ def exercise_question():
 
 	else:
 		return question(msg).reprompt(render_template('exercise_options'))	
+
 
 def misunderstand_question():
 	msg = render_template('misunderstand')+' '+render_template('continue_prompt')
