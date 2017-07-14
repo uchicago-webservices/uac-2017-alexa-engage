@@ -95,9 +95,15 @@ def ready(phrase):
 	msg = ''
 
 	if (next() == False):
+		photo_url = photo_url_prefix()+'finding_activities_you_enjoy.png'
 		msg = msg+' '+render_template('done')
 		msg = '<speak>'+msg+'</speak>'
-		return statement(msg)
+		return statement(msg).standard_card(
+				title="You are done!",
+				text="Lets exercise again soon!",
+				small_image_url=photo_url,
+				large_image_url=photo_url
+				)
 
 	return exercise_question()
 
