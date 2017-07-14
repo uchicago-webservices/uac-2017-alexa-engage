@@ -36,6 +36,8 @@ done: You are done. Lets exercise again soon!
 
 stop: OK. Lets do this again soon!
 
-help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Ready.
+help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> If you need extra time, say Wait. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Ready.
 
 misunderstand: I didn't understand your request.
+
+wait: No problem. <break time="10s"/><break time="10s"/>To continue, say o.k.<break time="5s"/>

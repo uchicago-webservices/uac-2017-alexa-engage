@@ -63,12 +63,22 @@ def misunderstand_question():
 		).reprompt(render_template('exercise_options'))
 
 
+def wait_question():
+	msg = render_template('wait')+' '+render_template('continue_prompt')
+	msg = '<speak>'+msg+'</speak>'
+	return question(msg).simple_card(
+		title="Waiting...", 
+		content='Say "OK" to continue.'
+		).reprompt(render_template('exercise_options'))
+
+
 def start_session():
 	session.attributes['exercise_no'] = 0
 	session.attributes['exercises'] = []
 	load_exercise_data()
 	session.attributes['exercise_total'] = len(session.attributes['exercises'])
 	return	
+
 
 def next():
 	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
@@ -87,25 +97,30 @@ def launch():
 
 @ask.intent("ReadyIntent")
 def ready(phrase):
-	acceptable_phrases = ['ready','yes','go','next','OK','skip']
-	if (phrase not in acceptable_phrases):
-		return misunderstand_question()
+	ready_phrases = ['ready','yes','go','next','OK','skip','resume']
+	not_ready_phrases = ['wait','pause','not ready','no']
 
-	exercise_no = session.attributes['exercise_no']
-	msg = ''
+	if (phrase in ready_phrases):
+		exercise_no = session.attributes['exercise_no']
+		msg = ''
 
-	if (next() == False):
-		photo_url = photo_url_prefix()+'finding_activities_you_enjoy.png'
-		msg = msg+' '+render_template('done')
-		msg = '<speak>'+msg+'</speak>'
-		return statement(msg).standard_card(
-				title="You are done!",
-				text="Lets exercise again soon!",
-				small_image_url=photo_url,
-				large_image_url=photo_url
-				)
+		if (next() == False):
+			photo_url = photo_url_prefix()+'finding_activities_you_enjoy.png'
+			msg = msg+' '+render_template('done')
+			msg = '<speak>'+msg+'</speak>'
+			return statement(msg).standard_card(
+					title="You are done!",
+					text="Lets exercise again soon!",
+					small_image_url=photo_url,
+					large_image_url=photo_url
+					)
 
-	return exercise_question()
+		return exercise_question()
+
+	if (phrase in not_ready_phrases):
+		return wait_question()
+
+	return misunderstand_question()
 
 
 @ask.intent("GoDirectlyIntent")
@@ -148,7 +163,7 @@ def help():
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title='Help with EngAGE Exercise', 
-		content='"READY" or "OK" to go to the next exercise.\n"STOP" to quit at any time.'
+		content='"READY" or "OK" to go to the next exercise.\n"WAIT" for extra time.\n"STOP" to quit at any time.'
 		).reprompt(render_template('exercise_options'))
 
 
