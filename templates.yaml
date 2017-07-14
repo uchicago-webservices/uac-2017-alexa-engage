@@ -1,4 +1,4 @@
-welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our workout, you can say Ready, Skip, or Stop, at any time.
+welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Skip, or Stop, at any time.
 
 exercise_options: Say Ready or Skip.
 
@@ -34,6 +34,6 @@ done: You are done. Lets exercise again soon!
 
 stop: OK. Lets do this again soon!
 
-help: <emphasis level="reduced">Engage</emphasis> Workout, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> To quit the workout at any time, say Stop. <break time="1s"/> To go back to your workout now, say Ready.
+help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Ready.
 
 misunderstand: I didn't understand your request.
