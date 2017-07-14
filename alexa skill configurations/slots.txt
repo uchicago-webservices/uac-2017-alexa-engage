@@ -11,3 +11,6 @@ wait
 pause
 not ready
 no
+repeat
+again
+go back

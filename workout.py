@@ -99,14 +99,12 @@ def launch():
 def ready(phrase):
 	ready_phrases = ['ready','yes','go','next','OK','skip','resume']
 	not_ready_phrases = ['wait','pause','not ready','no']
+	repeat_phrases = ['repeat','again','go back']
 
 	if (phrase in ready_phrases):
-		exercise_no = session.attributes['exercise_no']
-		msg = ''
-
 		if (next() == False):
 			photo_url = photo_url_prefix()+'finding_activities_you_enjoy.png'
-			msg = msg+' '+render_template('done')
+			msg = render_template('done')
 			msg = '<speak>'+msg+'</speak>'
 			return statement(msg).standard_card(
 					title="You are done!",
@@ -115,6 +113,9 @@ def ready(phrase):
 					large_image_url=photo_url
 					)
 
+		return exercise_question()
+
+	if (phrase in repeat_phrases):
 		return exercise_question()
 
 	if (phrase in not_ready_phrases):
@@ -163,7 +164,7 @@ def help():
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title='Help with EngAGE Exercise', 
-		content='"READY" or "OK" to go to the next exercise.\n"WAIT" for extra time.\n"STOP" to quit at any time.'
+		content='"READY" or "OK" to go to the next exercise.\n"REPEAT" to hear again.\n"WAIT" for extra time.\n"STOP" to quit at any time.'
 		).reprompt(render_template('exercise_options'))
 
 
