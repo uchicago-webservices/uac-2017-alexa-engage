@@ -1,31 +1,31 @@
 {
   "intents": [
     {
-      "intent": "ReadyIntent",
       "slots": [
         {
           "name": "phrase",
           "type": "READY_PHRASES"
         }
-      ]
+      ],
+      "intent": "ReadyIntent"
     },
     {
-      "intent": "GoDirectlyIntent",
       "slots": [
-      	{
-      	  "name": "exercise_no",
-      	  "type": "AMAZON.NUMBER"
-      	}
-      ]
+        {
+          "name": "exercise_no",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "GoDirectlyIntent"
     },
     {
-      "intent" : "AMAZON.StopIntent"
+      "intent": "AMAZON.StopIntent"
     },
     {
-      "intent" : "AMAZON.CancelIntent"
+      "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent" : "AMAZON.HelpIntent"
+      "intent": "AMAZON.HelpIntent"
     }
   ]
 }
