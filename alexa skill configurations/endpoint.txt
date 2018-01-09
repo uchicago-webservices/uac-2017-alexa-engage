@@ -1,0 +1,6 @@
+UChicago Lambda function:
+https://loenbegsec.execute-api.us-east-1.amazonaws.com/prod
+
+pezzutidyer@uchicago.edu Lambda function:
+https://fyt8fuetkh.execute-api.us-east-1.amazonaws.com/prod
+https://w5fwkwh2z4.execute-api.us-east-1.amazonaws.com/pezzutidyerprod

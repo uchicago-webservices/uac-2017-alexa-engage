@@ -1,15 +1,43 @@
-welcome: Lets get moving! Ready to exercise? <break time="5s"/> During our workout, you can say Ready, Skip, or Stop, at any time.
-
 exercise_options: Say Ready or Skip.
 
-continue_prompt: <break time="5s"/> Say Ready to continue. 
+continue_prompt: <break time="5s"/> Are you ready to continue?
 
-ex_1: Find a sturdy chair to help you balance on one <emphasis level="reduced">foot</emphasis>. 
+monday_intro: Lets get moving! Today we will stand on one foot, do wall push-ups, and do back stretches. For todays exercises, you will need a chair and a wall. <break time="5s"/> Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time.
 
-ex_2: Hold the back of the chair for balance. Stand on your right <emphasis level="reduced">foot</emphasis>. Lift your left <emphasis level="reduced">foot</emphasis> off the ground. <break time="1s"/> 10. 9. 8. 7. 6. 5. 4. 3. 2. 1. <break time="1s"/> Stand on both feet to take a break. <break time="2s"/> Now stand on your right foot again. <break time="1s"/> 10. 9. 8. 7. 6. 5. 4. 3. 2. 1. <break time="2s"/> Thats great. lets keep going!
+tuesday_intro: Welcome to Engage exercise! We are going to walk heel to toe, do arm curls, and do neck stretches. Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance. <break time="5s"/> Ready to exercise? <break time="5s"/> During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time.
 
-ex_3: Now lets balance on the other <emphasis level="reduced">foot</emphasis>. <break time="1s"/> Stand on your left <emphasis level="reduced">foot</emphasis>. Lift your right foot off the ground. Hold the back of the chair for balance. <break time="1s"/> 10. 9. 8. 7. 6. 5. 4. 3. 2. 1. <break time="1s"/> Stand on both feet to take a break. <break time="2s"/> Now stand on your left <emphasis level="reduced">foot</emphasis> again. <break time="1s"/> 10. 9. 8. 7. 6. 5. 4. 3. 2. 1. 
+stand_on_one_foot_1: Find a sturdy chair to help you balance on one <emphasis level="reduced">foot</emphasis>. 
+
+stand_on_one_foot_2: Hold the back of the chair for balance. Stand on your right <emphasis level="reduced">foot</emphasis>. Lift your left <emphasis level="reduced">foot</emphasis> off the ground. <break time="1s"/> <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" />  <break time="1s"/> Stand on both feet to take a break. <break time="2s"/> Now stand on your right foot again. <break time="1s"/> <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="2s"/> Place your foot back on the ground. Thats great. Lets keep going! Are you ready?
+
+stand_on_one_foot_3: Now lets balance on the other <emphasis level="reduced">foot</emphasis>. <break time="1s"/> Stand on your left <emphasis level="reduced">foot</emphasis>. Lift your right foot off the ground. Hold the back of the chair for balance. <break time="1s"/> <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Stand on both feet to take a break. <break time="2s"/> Now stand on your left <emphasis level="reduced">foot</emphasis> again. <break time="1s"/> <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> Place your foot back on the ground. Are you ready to continue?
+
+heel_to_toe_1: Lets walk heel to toe. If you are unsteady on your feet, do this exercise near a wall.
+
+heel_to_toe_2: Position the heel of one foot, just in front of the toes of the other foot. Your heel and toes should touch, or almost touch. <break time="1s"/> Focus on a spot ahead of you to help keep you steady. <break time="1s"/> Take a step. Put your heel just in front of the toe of your other foot. Continue to walk heel to toe. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Now stop. Ready for the next exercise?
+
+wall_push_ups_1: Now lets do wall push-ups. Face a wall, standing about arms length away. <break time="1s"/> Place your palms flat against the wall, at shoulder height. <break time="1s"/> Bend your elbows, and lower your body slowly toward the wall. Hold for one second. <break time="1s"/> Now slowly push yourself back, until your arms are straight. <break time="1s"/> Ready to do more?
+
+wall_push_ups_2: Do a few wall push-ups. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Take a break. <break time="2s"/> Now lets do a few morepush-ups. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Nice work! Ready for the next exercise?
+
+arm_curl_1: Find some hand <emphasis level="reduced">weights</emphasis>, water bottles, or soup cans for arm <emphasis level="reduced">curls</emphasis>.
+
+arm_curl_2: Stand up. <break time="1s"/> Hold the weights straight down at your sides, palms facing forward. <break time="1s"/> Slowly bend your elbows and lift the weights toward your chest. Keep your elbows at your sides. <break time="1s"/> Hold this position for one second. <break time="1s"/> Slowly lower your arms. <break time="1s"/> Ready to continue?
+
+arm_curl_3: Do a few arm <emphasis level="reduced">curls</emphasis>. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Take a break. <break time="2s"/> How about a few more arm <emphasis level="reduced">curls</emphasis>? <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Looking good!  Ready for more?
+
+back_stretch_1: Find a chair, and sit with your feet flat on the floor, to get ready for back <emphasis level='reduced'>stretches</emphasis>. Say OK when you're ready.
+
+back_stretch_2: Slowly bend forward from your hips. Keep your back and neck straight. <break time="1s"/> Slightly relax your neck and lower your chin. <break time="1s"/> Slowly bend farther forward, and slide your hands down your legs toward your shins. <break time="1s"/> Stop when you feel a stretch or slight discomfort. Hold this stretch. <break time="1s"/> <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Straighten up slowly all the way to the starting position. <break time="3s"/> Bend forward again and hold the stretch. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Straighten up again. <break time="1s"/>  You're doing great! Ready for more?
+
+neck_stretch_1: Now let's do a neck <emphasis level='reduced'>stretch</emphasis>. You can do this standing or sitting. <break time="1s"/> Slowly turn your head to the right, until you feel a slight stretch. <break time="1s"/> Be careful not to tilt your head forward or backward. Hold it in a comfortable position. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Turn your head to the left and hold the position. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_10_secs_converted.mp3" /> <break time="1s"/> Now turn your head back to a neutral position. 
 
 done: You are done. Lets exercise again soon!
 
 stop: OK. Lets do this again soon!
+
+help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> To hear the exercise again, say Repeat. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> If you need extra time, say Wait. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Go Back.
+
+misunderstand: I didn't understand your request.
+
+wait: No problem. <break time="10s"/><break time="10s"/>To continue, say o.k.<break time="5s"/>

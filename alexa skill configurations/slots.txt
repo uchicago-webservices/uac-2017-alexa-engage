@@ -1,0 +1,16 @@
+READY_PHRASES
+
+ready
+yes
+go
+next
+O K
+resume
+skip
+wait
+pause
+not ready
+no
+repeat
+again
+go back

@@ -1,8 +1,20 @@
 {
-    "dev": {
+    "beta": {
         "app_function": "workout.app", 
         "aws_region": "us-east-1", 
-        "profile_name": "default", 
+        "profile_name": "pezzutidyer", 
         "s3_bucket": "zappa-yll4506d4"
-    }
+    },
+    "prod": {
+        "app_function": "workout.app", 
+        "aws_region": "us-east-1", 
+        "profile_name": "uchicago", 
+        "s3_bucket": "engage-alexa-zappa-deployment"
+    },
+    "pezzutidyerprod": {
+        "app_function": "workout.app", 
+        "aws_region": "us-east-1", 
+        "profile_name": "pezzutidyer", 
+        "s3_bucket": "zappa-engage-prod"
+    }        
 }

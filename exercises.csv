@@ -1,3 +1,16 @@
-id,title,instructions,image
-1,"Stand on one foot.","Stand on one foot behind a sturdy chair, holding on for balance. Hold position for up to 10 seconds. Repeat 10-15 times. Repeat 10-15 times with other leg. Repeat 10-15 more times with each leg.","https://s3.us-east-2.amazonaws.com/engage-assets-20170505/stand_on_one_foot.jpg"
-2,"Walk Heel to Toe.","Position the heel of one foot just in front of the toes of the other foot. Your heel and toes should touch or almost touch. Choose a spot ahead of you and focus on it to keep you steady as you walk. Take a step. Put your heel just in front of the toe of your other foot. Repeat for 20 steps.","https://s3.us-east-2.amazonaws.com/engage-assets-20170505/heel_to_toe_walk.jpg"
+id,exercise_name,exercise_no,step_no,routine,template_name,photo,card_text
+1,Introduction,1,1,Monday,monday_intro,,For today's exercises you will need a chair and a wall.
+2,Introduction,2,1,Tuesday,tuesday_intro,,Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance.
+3,Stand On One Foot,3,1,Monday,stand_on_one_foot_1,stand_on_one_foot.jpg,Find a sturdy chair.
+4,Stand On One Foot,3,2,Monday,stand_on_one_foot_2,stand_on_one_foot.jpg,Stand on your right foot.
+5,Stand On One Foot,3,3,Monday,stand_on_one_foot_3,stand_on_one_foot.jpg,Now stand on your left foot.
+6,Heel To Toe Walk,4,1,Tuesday,heel_to_toe_1,heel_to_toe_walk.jpg,Stand near a wall for balance. Place one foot right in front of the other.
+7,Heel To Toe Walk,4,2,Tuesday,heel_to_toe_2,heel_to_toe_walk.jpg,Walk heel to toe.
+8,Wall Push-ups,5,1,Monday,wall_push_ups_1,wall_push_up.jpg,Face a wall.
+9,Wall Push-ups,5,2,Monday,wall_push_ups_2,wall_push_up.jpg,Do a few wall push-ups.
+10,Arm Curl,6,1,Tuesday,arm_curl_1,arm_curl.jpg,Find some hand weights. Water bottles or soup cans will do.
+11,Arm Curl,6,2,Tuesday,arm_curl_2,arm_curl.jpg,Lower and lift your arms.
+12,Arm Curl,6,3,Tuesday,arm_curl_3,arm_curl.jpg,Do a few arm curls.
+13,Back Stretch,7,1,Monday,back_stretch_1,back_1.jpg,Sit in a chair.
+14,Back Stretch,7,2,Monday,back_stretch_2,back_1.jpg,Slowly bend forward and slowly sit back up.
+15,Neck Stretch,8,1,Tuesday,neck_stretch_1,neck.jpg,Slowly turn your head to the right and left.

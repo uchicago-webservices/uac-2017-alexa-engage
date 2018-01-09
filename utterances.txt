@@ -1,9 +1,0 @@
-ReadyIntent ready
-ReadyIntent yes
-ReadyIntent go
-ReadyIntent next
-ReadyIntent skip
-ReadyIntent O K
-GoDirectlyIntent skip to {exercise_no}
-GoDirectlyIntent go to exercise {exercise_no}
-GoDirectlyIntent exercise {exercise_no}

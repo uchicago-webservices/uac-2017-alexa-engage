@@ -1,0 +1,3 @@
+ReadyIntent {phrase}
+GoDirectlyIntent go to number {exercise_no}
+GoDirectlyIntent number {exercise_no}
