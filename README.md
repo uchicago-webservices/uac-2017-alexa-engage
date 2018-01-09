@@ -7,6 +7,8 @@ To run:
 
 1. In first Terminal window:
 
+	$ virtualenv venv
+	$ source venv/bin/activate
 	$ python workout.py
 
 2. In second Terminal window:

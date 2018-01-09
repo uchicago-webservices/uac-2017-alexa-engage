@@ -35,23 +35,30 @@ def exercise_question():
 	exercise_no = session.attributes['exercise_no'] - 1
 	template_name = session.attributes['exercises'][exercise_no]['template_name']
 	exercise_title = session.attributes['exercises'][exercise_no]['exercise_name']
-	photo_url = photo_url_prefix()+session.attributes['exercises'][exercise_no]['photo']
 	card_text = session.attributes['exercises'][exercise_no]['card_text']
+
+	if (session.attributes['exercises'][exercise_no]['photo']):
+		photo_url = photo_url_prefix()+session.attributes['exercises'][exercise_no]['photo']
+	else:
+		photo_url = False
 
 	msg = ' '+render_template(template_name)
 	msg = msg+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 
-	if (photo_url):
+	if (photo_url == False):
+		return question(msg).simple_card(
+				title=exercise_title,
+				content=card_text
+				).reprompt(render_template('exercise_options'))	
+
+	else:
 		return question(msg).standard_card(
 				title=exercise_title,
 				text=card_text,
 				small_image_url=photo_url,
 				large_image_url=photo_url
 				).reprompt(render_template('exercise_options'))	
-
-	else:
-		return question(msg).reprompt(render_template('exercise_options'))	
 
 
 def misunderstand_question():
