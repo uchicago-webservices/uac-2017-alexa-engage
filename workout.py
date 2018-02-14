@@ -15,7 +15,9 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 def load_exercise_data():
 	routine = 'Monday'
 	day_of_week = time.strftime("%A")	
-	if (day_of_week in ['Tuesday','Thursday','Saturday']):
+	if (day_of_week in ['Tuesday','Thursday']):
+		routine = 'Tuesday'
+	if (day_of_week in ['Saturday','Sunday']):
 		routine = 'Tuesday'
 
 	import csv		
@@ -43,7 +45,7 @@ def exercise_question():
 		photo_url = False
 
 	msg = ' '+render_template(template_name)
-	msg = msg+' '+render_template('continue_prompt')
+	# msg = msg+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 
 	if (photo_url == False):
@@ -62,7 +64,7 @@ def exercise_question():
 
 
 def misunderstand_question():
-	msg = render_template('misunderstand')+' '+render_template('continue_prompt')
+	msg = render_template('misunderstand') #+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title="EngAGE Exercise didn't understand", 
@@ -71,7 +73,7 @@ def misunderstand_question():
 
 
 def wait_question():
-	msg = render_template('wait')+' '+render_template('continue_prompt')
+	msg = render_template('wait') #+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title="Waiting...", 
@@ -167,7 +169,7 @@ def cancel():
 
 @ask.intent("AMAZON.HelpIntent")
 def help():
-	msg = render_template('help')+' '+render_template('continue_prompt')
+	msg = render_template('help') #+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title='Help with EngAGE Exercise', 

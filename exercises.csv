@@ -1,16 +1,30 @@
-id,exercise_name,exercise_no,step_no,routine,template_name,photo,card_text
-1,Introduction,1,1,Monday,monday_intro,,For today's exercises you will need a chair and a wall.
-2,Introduction,2,1,Tuesday,tuesday_intro,,Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance.
-3,Stand On One Foot,3,1,Monday,stand_on_one_foot_1,stand_on_one_foot.jpg,Find a sturdy chair.
-4,Stand On One Foot,3,2,Monday,stand_on_one_foot_2,stand_on_one_foot.jpg,Stand on your right foot.
-5,Stand On One Foot,3,3,Monday,stand_on_one_foot_3,stand_on_one_foot.jpg,Now stand on your left foot.
-6,Heel To Toe Walk,4,1,Tuesday,heel_to_toe_1,heel_to_toe_walk.jpg,Stand near a wall for balance. Place one foot right in front of the other.
-7,Heel To Toe Walk,4,2,Tuesday,heel_to_toe_2,heel_to_toe_walk.jpg,Walk heel to toe.
-8,Wall Push-ups,5,1,Monday,wall_push_ups_1,wall_push_up.jpg,Face a wall.
-9,Wall Push-ups,5,2,Monday,wall_push_ups_2,wall_push_up.jpg,Do a few wall push-ups.
-10,Arm Curl,6,1,Tuesday,arm_curl_1,arm_curl.jpg,Find some hand weights. Water bottles or soup cans will do.
-11,Arm Curl,6,2,Tuesday,arm_curl_2,arm_curl.jpg,Lower and lift your arms.
-12,Arm Curl,6,3,Tuesday,arm_curl_3,arm_curl.jpg,Do a few arm curls.
-13,Back Stretch,7,1,Monday,back_stretch_1,back_1.jpg,Sit in a chair.
-14,Back Stretch,7,2,Monday,back_stretch_2,back_1.jpg,Slowly bend forward and slowly sit back up.
-15,Neck Stretch,8,1,Tuesday,neck_stretch_1,neck.jpg,Slowly turn your head to the right and left.
+id,exercise_name,exercise_no,step_no,routine,template_name,photo,card_text,
+1,Introduction,1,1,Monday,monday_intro,,For today's exercises you will need a chair and a wall.,
+2,Stand On One Foot,2,1,Monday,stand_on_one_foot_1,stand_on_one_foot.jpg,Find a sturdy chair.,
+3,Stand On One Foot,2,2,Monday,stand_on_one_foot_2,stand_on_one_foot.jpg,Stand on your right foot.,
+4,Stand On One Foot,2,3,Monday,stand_on_one_foot_3,stand_on_one_foot.jpg,Now stand on your left foot.,
+5,Wall Push-ups,3,1,Monday,wall_push_ups_1,wall_push_up.jpg,Face a wall.,
+6,Wall Push-ups,3,2,Monday,wall_push_ups_2,wall_push_up.jpg,Do a few wall push-ups.,
+7,Toe Stand,4,1,Monday,toe_stand_1,toe_stand.jpg,Stand on tiptoes.,
+8,Back Stretch,5,1,Monday,back_stretch_1,back_1.jpg,Sit in a chair.,
+9,Back Stretch,5,2,Monday,back_stretch_2,back_1.jpg,Slowly bend forward and slowly sit back up.,
+10,Chest Stretch,6,1,Monday,chest_stretch_1,chest.jpg,Find an armless chair.,
+11,Chest Stretch,6,2,Monday,chest_stretch_2,chest.jpg,Raise arms and move them back.,
+12,Ankle Stretch,7,1,Monday,ankle_stretch_1,ankle.jpg,Bend your ankles again.,
+13,Thigh Stretch,8,1,Monday,thigh_stretch_1,thigh-standing.jpg,Stand behind your chair. Stretch your left leg.,
+14,Thigh Stretch,8,2,Monday,thigh_stretch_2,thigh-standing.jpg,Stretch your right leg.,
+15,Thigh Stretch,8,3,Monday,thigh_stretch_3,thigh-standing.jpg,Stretch your left leg and then your right leg.,
+16,Introduction,9,1,Tuesday,tuesday_intro,,Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance.,
+17,Heel To Toe Walk,10,1,Tuesday,heel_to_toe_1,heel_to_toe_walk.jpg,Stand near a wall for balance. Place one foot right in front of the other.,
+18,Heel To Toe Walk,10,2,Tuesday,heel_to_toe_2,heel_to_toe_walk.jpg,Walk heel to toe.,
+19,Arm Curl,11,1,Tuesday,arm_curl_1,arm_curl.jpg,Find some hand weights. Water bottles or soup cans will do.,
+20,Arm Curl,11,2,Tuesday,arm_curl_2,arm_curl.jpg,Lower and lift your arms.,
+21,Arm Curl,11,3,Tuesday,arm_curl_3,arm_curl.jpg,Do a few arm curls.,
+22,Knee Curl,12,1,Tuesday,knee_curl_1,knee_curl_0.jpg,Find a chair. Bend your left knee.,
+23,Knee Curl,12,2,Tuesday,knee_curl_2,knee_curl_0.jpg,Now bend your right knee.,
+24,Neck Stretch,13,1,Tuesday,neck_stretch_1,neck.jpg,Slowly turn your head to the right and left.,
+25,Upper Body Stretch,14,1,Tuesdsay,upper_body_stretch_1,upper_body.jpg,Face a wall. Walk your hands up the wall.,
+26,Lower Back Stretch,15,1,Tuesday,lower_back_stretch_1,lower_back.jpg,This exercise stretches the muscles of your lower back. If you've had hip or back surgery,talk with your doctor before trying this stretch.
+27,Lower Back Stretch,15,2,Tuesday,lower_back_stretch_1,lower_back.jpg,Lie on your back. Bend your knees and lower both legs to one side and then the other.,
+28,Back of Leg Stretch,16,1,Tuesday,back_of_leg_stretch_1,back_leg_floor.jpg,This exercise stretches the muscles in the back of your legs. If you've had hip or back surgery,talk with your doctor before trying this stretch.
+29,Back of Leg Stretch,16,2,Tuesday,back_of_leg_stretch_2,back_leg_floor.jpg,Lie on your back. Raise one leg and pull toward you. Then switch legs.,
