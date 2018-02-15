@@ -45,7 +45,6 @@ def exercise_question():
 		photo_url = False
 
 	msg = ' '+render_template(template_name)
-	# msg = msg+' '+render_template('continue_prompt')
 	msg = '<speak>'+msg+'</speak>'
 
 	if (photo_url == False):
@@ -64,7 +63,7 @@ def exercise_question():
 
 
 def misunderstand_question():
-	msg = render_template('misunderstand') #+' '+render_template('continue_prompt')
+	msg = render_template('misunderstand')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title="EngAGE Exercise didn't understand", 
@@ -73,7 +72,7 @@ def misunderstand_question():
 
 
 def wait_question():
-	msg = render_template('wait') #+' '+render_template('continue_prompt')
+	msg = render_template('wait')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title="Waiting...", 
@@ -169,7 +168,7 @@ def cancel():
 
 @ask.intent("AMAZON.HelpIntent")
 def help():
-	msg = render_template('help') #+' '+render_template('continue_prompt')
+	msg = render_template('help')
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title='Help with EngAGE Exercise', 
