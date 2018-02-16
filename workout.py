@@ -13,7 +13,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 def load_exercise_data():
-	routine = 'Monday'
+	routine = 'Tuesday'
 	day_of_week = time.strftime("%A")	
 	if (day_of_week in ['Tuesday','Thursday']):
 		routine = 'Tuesday'
@@ -105,7 +105,7 @@ def launch():
 
 @ask.intent("ReadyIntent")
 def ready(phrase):
-	ready_phrases = ['ready','yes','go','next','OK','skip','resume']
+	ready_phrases = ['ready','yes','go','next','OK','skip','resume', 'o.k.', 'okay', 'k']
 	not_ready_phrases = ['wait','pause','not ready','no']
 	repeat_phrases = ['repeat','again','go back']
 
