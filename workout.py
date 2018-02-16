@@ -13,7 +13,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 def load_exercise_data():
-	routine = 'Tuesday'
+	routine = 'Saturday'
 	day_of_week = time.strftime("%A")	
 	if (day_of_week in ['Tuesday','Thursday']):
 		routine = 'Tuesday'

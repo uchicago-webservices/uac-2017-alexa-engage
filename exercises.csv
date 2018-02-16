@@ -1,34 +1,48 @@
-id,exercise_name,exercise_no,routine,template_name,photo,card_text,
+id,exercise_name,exercise_no,routine,template_name,photo,card_text,source_url
 1,Introduction,1,Monday,monday_intro,,For today's exercises you will need a chair and a wall.,
 2,Stand On One Foot,2,Monday,stand_on_one_foot_1,stand_on_one_foot.jpg,Find a sturdy chair.,
 3,Stand On One Foot,3,Monday,stand_on_one_foot_2,stand_on_one_foot.jpg,Stand on your right foot.,
 4,Stand On One Foot,4,Monday,stand_on_one_foot_3,stand_on_one_foot.jpg,Now stand on your left foot.,
 5,Wall Push-ups,5,Monday,wall_push_ups_1,wall_push_up.jpg,Face a wall.,
 6,Wall Push-ups,6,Monday,wall_push_ups_2,wall_push_up.jpg,Do a few wall push-ups.,
-7,Toe Stand,7,Monday,toe_stand_1,toe_stand.jpg,Stand behind a sturdy chair.,
-8,Toe Stand,8,Monday,toe_stand_2,toe_stand.jpg,Stand on tiptoes several times.,
+7,Toe Stand,7,Monday,toe_stand_1,toe_stand.jpg,Stand behind a sturdy chair.,https://go4life.nia.nih.gov/exercises/toe-stand
+8,Toe Stand,8,Monday,toe_stand_2,toe_stand.jpg,Stand on tiptoes several times.,https://go4life.nia.nih.gov/exercises/toe-stand
 9,Back Stretch,9,Monday,back_stretch_1,back_1.jpg,Sit in a chair.,
 10,Back Stretch,10,Monday,back_stretch_2,back_1.jpg,Slowly bend forward and slowly sit back up.,
-11,Chest Stretch,11,Monday,chest_stretch_1,chest.jpg,Find an armless chair.,
-12,Chest Stretch,12,Monday,chest_stretch_2,chest.jpg,Raise arms and move them back.,
-13,Ankle Stretch,13,Monday,ankle_stretch_1,ankle.jpg,Bend your ankles again.,
-14,Thigh Stretch,14,Monday,thigh_stretch_1,thigh-standing.jpg,Stand behind your chair. Stretch your left leg.,
-15,Thigh Stretch,15,Monday,thigh_stretch_2,thigh-standing.jpg,Stretch your right leg.,
-16,Thigh Stretch,16,Monday,thigh_stretch_3,thigh-standing.jpg,Stretch your left leg and then your right leg.,
+11,Chest Stretch,11,Monday,chest_stretch_1,chest.jpg,Find an armless chair.,https://go4life.nia.nih.gov/exercises/chest
+12,Chest Stretch,12,Monday,chest_stretch_2,chest.jpg,Raise arms and move them back.,https://go4life.nia.nih.gov/exercises/chest
+13,Ankle Stretch,13,Monday,ankle_stretch_1,ankle.jpg,Bend your ankles again.,https://go4life.nia.nih.gov/exercises/ankle
+14,Thigh Stretch,14,Monday,thigh_stretch_1,thigh-standing.jpg,Stand behind your chair. Stretch your left leg.,https://go4life.nia.nih.gov/exercises/thigh-standing
+15,Thigh Stretch,15,Monday,thigh_stretch_2,thigh-standing.jpg,Stretch your right leg.,https://go4life.nia.nih.gov/exercises/thigh-standing
+16,Thigh Stretch,16,Monday,thigh_stretch_3,thigh-standing.jpg,Stretch your left leg and then your right leg.,https://go4life.nia.nih.gov/exercises/thigh-standing
 17,Introduction,1,Tuesday,tuesday_intro,,Today you will need some hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance.,
 18,Heel To Toe Walk,2,Tuesday,heel_to_toe_1,heel_to_toe_walk.jpg,Stand near a wall for balance. Place one foot right in front of the other.,
 19,Heel To Toe Walk,3,Tuesday,heel_to_toe_2,heel_to_toe_walk.jpg,Walk heel to toe.,
 20,Arm Curl,4,Tuesday,arm_curl_1,arm_curl.jpg,Find some hand weights. Water bottles or soup cans will do.,
 21,Arm Curl,5,Tuesday,arm_curl_2,arm_curl.jpg,Lower and lift your arms.,
 22,Arm Curl,6,Tuesday,arm_curl_3,arm_curl.jpg,Do a few arm curls.,
-23,Knee Curl,7,Tuesday,knee_curl_1,knee_curl_0.jpg,Find a chair.,
-24,Knee Curl,8,Tuesday,knee_curl_2,knee_curl_0.jpg,Bend your left knee.,
-25,Knee Curl,9,Tuesday,knee_curl_3,knee_curl_0.jpg,Do left knee curls and right knee curls.,
+23,Knee Curl,7,Tuesday,knee_curl_1,knee_curl_0.jpg,Find a chair.,https://go4life.nia.nih.gov/exercises/knee-curl
+24,Knee Curl,8,Tuesday,knee_curl_2,knee_curl_0.jpg,Bend your left knee.,https://go4life.nia.nih.gov/exercises/knee-curl
+25,Knee Curl,9,Tuesday,knee_curl_3,knee_curl_0.jpg,Do left knee curls and right knee curls.,https://go4life.nia.nih.gov/exercises/knee-curl
 26,Neck Stretch,10,Tuesday,neck_stretch_1,neck.jpg,Slowly turn your head to the right and left.,
-27,Upper Body Stretch,11,Tuesdsay,upper_body_stretch_1,upper_body.jpg,Face a wall. Walk your hands up the wall.,
-28,Upper Body Stretch,12,Tuesdsay,upper_body_stretch_2,upper_body.jpg,Walk your hands up the wall.,
-29,Lower Back Stretch,13,Tuesday,lower_back_stretch_1,lower_back.jpg,This exercise stretches the muscles of your lower back. If you've had hip or back surgery,talk with your doctor before trying this stretch.
-30,Lower Back Stretch,14,Tuesday,lower_back_stretch_1,lower_back.jpg,Lie on your back. Bend your knees and lower both legs to one side and then the other.,
-31,Back of Leg Stretch,15,Tuesday,back_of_leg_stretch_1,back_leg_floor.jpg,This exercise stretches the muscles in the back of your legs. If you've had hip or back surgery,talk with your doctor before trying this stretch.
-32,Back of Leg Stretch,16,Tuesday,back_of_leg_stretch_2,back_leg_floor.jpg,Lie on your back. Raise your right leg and pull toward you.,
-33,Back of Leg Stretch,17,Tuesday,back_of_leg_stretch_3,back_leg_floor.jpg,Work your right and left legs.,
+27,Upper Body Stretch,11,Tuesdsay,upper_body_stretch_1,upper_body.jpg,Face a wall. Walk your hands up the wall.,https://go4life.nia.nih.gov/exercises/upper-body
+28,Upper Body Stretch,12,Tuesdsay,upper_body_stretch_2,upper_body.jpg,Walk your hands up the wall.,https://go4life.nia.nih.gov/exercises/upper-body
+29,Lower Back Stretch,13,Tuesday,lower_back_stretch_1,lower_back.jpg,This exercise stretches the muscles of your lower back. If you've had hip or back surgery,https://go4life.nia.nih.gov/exercises/lower-back
+30,Lower Back Stretch,14,Tuesday,lower_back_stretch_1,lower_back.jpg,Lie on your back. Bend your knees and lower both legs to one side and then the other.,https://go4life.nia.nih.gov/exercises/lower-back
+31,Back of Leg Stretch,15,Tuesday,back_of_leg_stretch_1,back_leg_floor.jpg,This exercise stretches the muscles in the back of your legs. If you've had hip or back surgery talk with your doctor before trying this stretch.,https://go4life.nia.nih.gov/exercises/lower-back
+32,Back of Leg Stretch,16,Tuesday,back_of_leg_stretch_2,back_leg_floor.jpg,Lie on your back. Raise your right leg and pull toward you.,https://go4life.nia.nih.gov/exercises/back-leg-floor
+33,Back of Leg Stretch,17,Tuesday,back_of_leg_stretch_3,back_leg_floor.jpg,Work your right and left legs.,https://go4life.nia.nih.gov/exercises/back-leg-floor
+34,Balance Walk,1,Saturday,balance_walk_1,balance_walk.jpg,Hold out arms and left your leg as you walk.,https://go4life.nia.nih.gov/exercises/balance-walk
+35,Side Arm Raise,2,Saturday,side_arm_raise_1,side_arm_raise.jpg,Find some hand weights. Water bottles or soup cans will do. Chair is optional.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+36,Side Arm Raise,3,Saturday,side_arm_raise_2,side_arm_raise.jpg,Lift arms to shoulder height and then lower.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+37,Side Arm Raise,4,Saturday,side_arm_raise_3,side_arm_raise.jpg,Do several arm raises.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+38,Back Leg Raise,5,Saturday,back_leg_raise_1,back_leg_raise.jpg,Find a sturdy chair.,https://go4life.nia.nih.gov/exercises/back-leg-raise
+39,Back Leg Raise,6,Saturday,back_leg_raise_2,back_leg_raise.jpg,"Lift one leg straigh back, hold for a second, and lower your leg.",https://go4life.nia.nih.gov/exercises/back-leg-raise
+40,Back Leg Raise,7,Saturday,back_leg_raise_3,back_leg_raise.jpg,Do several leg raises with the right and left legs.,https://go4life.nia.nih.gov/exercises/back-leg-raise
+41,Getting Down on the Floor,8,Saturday,get_down_1,floor_exercise.png,Find a sturdy chair. You will lower yourself to the floor. If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-down-floor
+42,Getting Down on the Floor,9,Saturday,get_down_2,floor_exercise.png,Kneel down using the chair for support. Lower yourself to one hip. Straighten your legs. Lay down on one side. Roll onto back.,https://go4life.nia.nih.gov/exercises/getting-down-floor
+43,Getting Up from the Floor,10,Saturday,get_up_1,get_up.png,If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-floor
+44,Calf Stretch,11,Saturday,calf_stretch_1,calf.jpg,Face a wall and place your palms on the wall at shoulder height. Stretch your left calf.,https://go4life.nia.nih.gov/exercises/calf
+45,Calf Stretch,12,Saturday,calf_stretch_2,calf.jpg,Stretch your right and left calves.,https://go4life.nia.nih.gov/exercises/calf
+46,Shoulder Stretch,13,Saturday,shoulder_stretch_1,shoulder.jpg,Stand with your back against the wall.  Bend arms and place agains the wall with fingers pointing up. Then roll arms to point fingers down.,https://go4life.nia.nih.gov/exercises/shoulder
+47,Shoulder Stretch,14,Saturday,shoulder_stretch_2,shoulder.jpg,Roll bent arms slowly up and down several times.,https://go4life.nia.nih.gov/exercises/shoulder
