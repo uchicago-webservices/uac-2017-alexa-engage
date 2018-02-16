@@ -32,17 +32,18 @@ id,exercise_name,exercise_no,routine,template_name,photo,card_text,source_url
 31,Back of Leg Stretch,15,Tuesday,back_of_leg_stretch_1,back_leg_floor.jpg,This exercise stretches the muscles in the back of your legs. If you've had hip or back surgery talk with your doctor before trying this stretch.,https://go4life.nia.nih.gov/exercises/lower-back
 32,Back of Leg Stretch,16,Tuesday,back_of_leg_stretch_2,back_leg_floor.jpg,Lie on your back. Raise your right leg and pull toward you.,https://go4life.nia.nih.gov/exercises/back-leg-floor
 33,Back of Leg Stretch,17,Tuesday,back_of_leg_stretch_3,back_leg_floor.jpg,Work your right and left legs.,https://go4life.nia.nih.gov/exercises/back-leg-floor
-34,Balance Walk,1,Saturday,balance_walk_1,balance_walk.jpg,Hold out arms and left your leg as you walk.,https://go4life.nia.nih.gov/exercises/balance-walk
-35,Side Arm Raise,2,Saturday,side_arm_raise_1,side_arm_raise.jpg,Find some hand weights. Water bottles or soup cans will do. Chair is optional.,https://go4life.nia.nih.gov/exercises/side-arm-raise
-36,Side Arm Raise,3,Saturday,side_arm_raise_2,side_arm_raise.jpg,Lift arms to shoulder height and then lower.,https://go4life.nia.nih.gov/exercises/side-arm-raise
-37,Side Arm Raise,4,Saturday,side_arm_raise_3,side_arm_raise.jpg,Do several arm raises.,https://go4life.nia.nih.gov/exercises/side-arm-raise
-38,Back Leg Raise,5,Saturday,back_leg_raise_1,back_leg_raise.jpg,Find a sturdy chair.,https://go4life.nia.nih.gov/exercises/back-leg-raise
-39,Back Leg Raise,6,Saturday,back_leg_raise_2,back_leg_raise.jpg,"Lift one leg straigh back, hold for a second, and lower your leg.",https://go4life.nia.nih.gov/exercises/back-leg-raise
-40,Back Leg Raise,7,Saturday,back_leg_raise_3,back_leg_raise.jpg,Do several leg raises with the right and left legs.,https://go4life.nia.nih.gov/exercises/back-leg-raise
-41,Getting Down on the Floor,8,Saturday,get_down_1,floor_exercise.png,Find a sturdy chair. You will lower yourself to the floor. If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-down-floor
-42,Getting Down on the Floor,9,Saturday,get_down_2,floor_exercise.png,Kneel down using the chair for support. Lower yourself to one hip. Straighten your legs. Lay down on one side. Roll onto back.,https://go4life.nia.nih.gov/exercises/getting-down-floor
-43,Getting Up from the Floor,10,Saturday,get_up_1,get_up.png,If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-floor
-44,Calf Stretch,11,Saturday,calf_stretch_1,calf.jpg,Face a wall and place your palms on the wall at shoulder height. Stretch your left calf.,https://go4life.nia.nih.gov/exercises/calf
-45,Calf Stretch,12,Saturday,calf_stretch_2,calf.jpg,Stretch your right and left calves.,https://go4life.nia.nih.gov/exercises/calf
-46,Shoulder Stretch,13,Saturday,shoulder_stretch_1,shoulder.jpg,Stand with your back against the wall.  Bend arms and place agains the wall with fingers pointing up. Then roll arms to point fingers down.,https://go4life.nia.nih.gov/exercises/shoulder
-47,Shoulder Stretch,14,Saturday,shoulder_stretch_2,shoulder.jpg,Roll bent arms slowly up and down several times.,https://go4life.nia.nih.gov/exercises/shoulder
+34,Introduction,1,Saturday,saturday_intro,,Today you will need a chair and some hand weights. Water bottles or soup cans will do. You will also be asked to use a wall and to get onto the floor.,
+35,Balance Walk,2,Saturday,balance_walk_1,balance_walk.jpg,Hold out arms and left your leg as you walk.,https://go4life.nia.nih.gov/exercises/balance-walk
+36,Side Arm Raise,3,Saturday,side_arm_raise_1,side_arm_raise.jpg,Find some hand weights. Water bottles or soup cans will do. Chair is optional.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+37,Side Arm Raise,4,Saturday,side_arm_raise_2,side_arm_raise.jpg,Lift arms to shoulder height and then lower.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+38,Side Arm Raise,5,Saturday,side_arm_raise_3,side_arm_raise.jpg,Do several arm raises.,https://go4life.nia.nih.gov/exercises/side-arm-raise
+39,Back Leg Raise,6,Saturday,back_leg_raise_1,back_leg_raise.jpg,Find a sturdy chair.,https://go4life.nia.nih.gov/exercises/back-leg-raise
+40,Back Leg Raise,7,Saturday,back_leg_raise_2,back_leg_raise.jpg,"Lift one leg straigh back, hold for a second, and lower your leg.",https://go4life.nia.nih.gov/exercises/back-leg-raise
+41,Back Leg Raise,8,Saturday,back_leg_raise_3,back_leg_raise.jpg,Do several leg raises with the right and left legs.,https://go4life.nia.nih.gov/exercises/back-leg-raise
+42,Getting Down on the Floor,9,Saturday,get_down_1,floor_exercise.png,Find a sturdy chair. You will lower yourself to the floor. If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-down-floor
+43,Getting Down on the Floor,10,Saturday,get_down_2,floor_exercise.png,Kneel down using the chair for support. Lower yourself to one hip. Straighten your legs. Lay down on one side. Roll onto back.,https://go4life.nia.nih.gov/exercises/getting-down-floor
+44,Getting Up from the Floor,11,Saturday,get_up_1,get_up.png,If you've had hip or back surgery talk with your doctor before using the following method.,https://go4life.nia.nih.gov/exercises/getting-floor
+45,Calf Stretch,12,Saturday,calf_stretch_1,calf.jpg,Face a wall and place your palms on the wall at shoulder height. Stretch your left calf.,https://go4life.nia.nih.gov/exercises/calf
+46,Calf Stretch,13,Saturday,calf_stretch_2,calf.jpg,Stretch your right and left calves.,https://go4life.nia.nih.gov/exercises/calf
+47,Shoulder Stretch,14,Saturday,shoulder_stretch_1,shoulder.jpg,Stand with your back against the wall.  Bend arms and place agains the wall with fingers pointing up. Then roll arms to point fingers down.,https://go4life.nia.nih.gov/exercises/shoulder
+48,Shoulder Stretch,15,Saturday,shoulder_stretch_2,shoulder.jpg,Roll bent arms slowly up and down several times.,https://go4life.nia.nih.gov/exercises/shoulder
