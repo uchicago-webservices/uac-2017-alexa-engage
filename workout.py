@@ -12,13 +12,21 @@ ask = Ask(app, "/")
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
+def load_routine(routine_name):
+	if routine_name == '':
+		session.attributes['routine'] = 'Monday'
+		day_of_week = time.strftime("%A")	
+		if (day_of_week in ['Tuesday','Thursday']):
+			session.attributes['routine'] = 'Tuesday'
+		if (day_of_week in ['Saturday','Sunday']):
+			session.attributes['routine'] = 'Saturday'
+	else:
+		session.attributes['routine'] = routine_name
+
+	return True
+
 def load_exercise_data():
-	routine = 'Monday'
-	day_of_week = time.strftime("%A")	
-	if (day_of_week in ['Tuesday','Thursday']):
-		routine = 'Tuesday'
-	if (day_of_week in ['Saturday','Sunday']):
-		routine = 'Tuesday'
+	routine = session.attributes['routine']
 
 	import csv		
  	with open('exercises.csv') as csvfile:		
@@ -81,6 +89,9 @@ def wait_question():
 
 
 def start_session():
+	if session.attributes.get('routine') is None:
+		load_routine('')
+
 	session.attributes['exercise_no'] = 0
 	session.attributes['exercises'] = []
 	load_exercise_data()
@@ -132,9 +143,17 @@ def ready(phrase):
 	return misunderstand_question()
 
 
+@ask.intent("RoutineIntent")
+def routine(routine_name):
+	session.attributes['routine'] = routine_name
+	start_session()
+	next()
+	return exercise_question()	
+
+
 @ask.intent("GoDirectlyIntent")
 def godirectly(exercise_no):
-	start_session()
+	start_session()		
 
 	if (exercise_no is None):
 		return misunderstand_question()
