@@ -2,9 +2,14 @@ READY_PHRASES
 
 ready
 yes
+yeah
+yeh
 go
 next
 O K
+o.k.
+okay
+k
 resume
 skip
 wait
@@ -14,3 +19,9 @@ no
 repeat
 again
 go back
+
+
+ROUTINES
+monday
+tuesday
+saturday

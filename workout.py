@@ -145,10 +145,15 @@ def ready(phrase):
 
 @ask.intent("RoutineIntent")
 def routine(routine_name):
-	session.attributes['routine'] = routine_name
-	start_session()
-	next()
-	return exercise_question()	
+	routines = ['Monday','Tuesday','Saturday']
+
+	if (routine_name in routines):
+		session.attributes['routine'] = routine_name
+		start_session()
+		next()
+		return exercise_question()	
+
+	return misunderstand_question()
 
 
 @ask.intent("GoDirectlyIntent")

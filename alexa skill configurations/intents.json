@@ -12,6 +12,15 @@
     {
       "slots": [
         {
+          "name": "routine_name",
+          "type": "ROUTINES"
+        }
+      ],
+      "intent": "RoutineIntent"
+    },
+    {
+      "slots": [
+        {
           "name": "exercise_no",
           "type": "AMAZON.NUMBER"
         }

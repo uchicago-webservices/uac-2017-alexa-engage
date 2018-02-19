@@ -1,3 +1,4 @@
 ReadyIntent {phrase}
+RoutineIntent use the {routine_name} routine
 GoDirectlyIntent go to number {exercise_no}
 GoDirectlyIntent number {exercise_no}
