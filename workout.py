@@ -13,7 +13,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
 
 def load_exercise_data():
-	routine = 'Saturday'
+	routine = 'Monday'
 	day_of_week = time.strftime("%A")	
 	if (day_of_week in ['Tuesday','Thursday']):
 		routine = 'Tuesday'
@@ -36,7 +36,7 @@ def photo_url_prefix():
 def exercise_question():
 	exercise_no = session.attributes['exercise_no'] - 1
 	template_name = session.attributes['exercises'][exercise_no]['template_name']
-	exercise_title = session.attributes['exercises'][exercise_no]['exercise_name']
+	exercise_title = str(session.attributes['exercise_no'])+'. '+session.attributes['exercises'][exercise_no]['exercise_name']
 	card_text = session.attributes['exercises'][exercise_no]['card_text']
 
 	if (session.attributes['exercises'][exercise_no]['photo']):
@@ -105,7 +105,7 @@ def launch():
 
 @ask.intent("ReadyIntent")
 def ready(phrase):
-	ready_phrases = ['ready','yes','go','next','OK','skip','resume', 'o.k.', 'okay', 'k']
+	ready_phrases = ['ready','yes','go','next','OK','skip','resume', 'o.k.', 'okay', 'k', 'yeah', 'yeh']
 	not_ready_phrases = ['wait','pause','not ready','no']
 	repeat_phrases = ['repeat','again','go back']
 
