@@ -42,7 +42,7 @@ chest_stretch_1: Now we'll do chest <emphasis level='reduced'>stretches</emphasi
 
 chest_stretch_2: Hold your arms to your sides at shoulder height, with palms facing forward. <break time="1s"/> Slowly move your arms back. Squeeze your shoulder blades together. <break time="1s"/> Stop when you feel a stretch or slight discomfort. Hold this position. <audio src="https://s3.amazonaws.com/engage-alexa-exercise-photos/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/>  Good job! Lower your arms and relax. <break time="3s"/>  Again, hold your arms to your sides at shoulder height, with palms facing forward. <break time="1s"/> Slowly move your arms back, while squeezing your shoulder blades together. Hold. <audio src="https://s3.amazonaws.com/engage-alexa-exercise-photos/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Lower your arms, and take a break. <break time="1s"/> To continue, say OK.
 
-get_down_1: Now let's practice getting down on the floor, and getting back up. If you've had hip or back surgery, talk with your doctor before using the following method. <break time="1s"/> Stand facing a sturdy chair, and say Ready.
+get_down_1: Now let's practice getting down on the floor. If you've had hip or back surgery, talk with your doctor before using the following method. <break time="1s"/> Stand facing a sturdy chair, and say Ready.
 
 get_down_2: Put your hands on the seat, and lower yourself down on one knee. <break time="3s"/> Bring the other knee down. <break time="2s"/> Put a hand on the floor. <break time="2s"/> Leaning on your hand, slowly bring your hip to the floor. <break time="5s"/> Put your other hand on the floor, next to your first hand, to steady yourself, if needed. <break time="1s"/> You should now be sitting with your weight on one hip. <break time="1s"/> Straighten your legs. <break time="4s"/> Bend your elbow until your weight is resting on it. <break time="3s"/> Straighten your arm. Use your other hand for support, if needed. You should now be lying on your side. <break time="1s"/> Roll onto your back. <break time="2s"/> Are you ready to continue?
 
@@ -52,7 +52,7 @@ heel_to_toe_1: Lets walk heel to toe. If you are unsteady on your feet, do this 
 
 heel_to_toe_2: Position the heel of one foot, just in front of the toes of the other foot. Your heel and toes should touch, or almost touch. <break time="1s"/> Focus on a spot ahead of you to help keep you steady. <break time="1s"/> Take a step. Put your heel just in front of the toe of your other foot. Continue to walk heel to toe. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Now stop. Ready for the next exercise?
 
-knee_curl_1: Stand behind a sturdy chair, holding on for balance. 
+knee_curl_1: Now it's time for knee curls. Stand behind a sturdy chair, holding on for balance. 
 
 knee_curl_2: Lift your left leg straight back, without bending your knee, or pointing your toes. Breathe in slowly. <break time="1s"/> Breathe out as you slowly bend your knee, to bring your heel up toward your buttocks, as far as possible. <break time="1s"/> Bend only from your knee, and keep your hips still. <break time="1s"/> Your right leg should be slightly bent. Hold the position. <break time="1s"/> Breathe in as you slowly lower your foot to the floor. We will repeat this knee curl several times. Are you ready?
 
@@ -92,7 +92,7 @@ toe_stand_1: Now we will do toe stands. Stand behind a sturdy chair, then say Re
 
 toe_stand_2: Place your feet shoulder-width apart and hold the chair for balance. Breathe in slowly. <break time="1s"/> <emphasis level='reduced'>Breathe</emphasis> out, and slowly stand on tiptoes, as high as possible. Hold this position for 1 second. <break time="1s"/> Breathe in as you slowly lower your heels to the floor. <break time="1s"/> Now let's do several toe stands. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Take a break. <break time="3s"/> Let's do a few more toe stands. <audio src="https://s3.amazonaws.com/engage-alexa-exercise-photos/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Nice work! Ready for the next exercise?
 
-upper_body_stretch_1: Stand facing a wall. You should be slightly farther than arm's length from the wall. Your feet should be shoulder-width apart.
+upper_body_stretch_1: Upper body stretches increase the flexibility of your arms, chest, and shoulders. Stand facing a wall. You should be slightly farther than arm's length from the wall. Your feet should be shoulder-width apart.
 
 upper_body_stretch_2: Lean your body forward. Put your palms flat against the wall, at shoulder height, and shoulder-width apart. <break time="1s"/> Keeping your back straight, slowly walk your hands up the wall, until your arms are above your head. Hold this position. <audio src="https://s3.us-east-2.amazonaws.com/engage-assets-20170505/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Slowly walk your hands back down. <break time="2s"/> Walk your hands back up the wall, and hold. <audio src="https://s3.amazonaws.com/engage-alexa-exercise-photos/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Slowly walk your hands back down. One more time. Walk your hands up, and hold. <audio src="https://s3.amazonaws.com/engage-alexa-exercise-photos/ticking_clock_20_secs_converted.mp3" /> <break time="1s"/> Walk back down. <break time="1s"/> Ready to continue?
 
@@ -104,8 +104,8 @@ done: You are done. Lets exercise again soon!
 
 stop: OK. Lets do this again soon!
 
-help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> To hear the exercise again, say Repeat. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> If you need extra time, say Wait. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Go Back.
+help: <emphasis level="reduced">Engage</emphasis> Exercise, guides you through a series of exercises. <break time="1s"/> When an exercise is done, say Ready <emphasis level="reduced">or</emphasis> o.k., to move on to the next one. <break time="1s"/> To hear the exercise again, say Repeat. <break time="1s"/> You can interrupt me at any time by saying my wake word. Then you can give me a command. <break time="1s"/> If you don't want to do an exercise, say Skip. <break time="1s"/> If you need extra time, say Wait. <break time="1s"/> To quit the exercises at any time, say Stop. <break time="1s"/> To go back to your exercises now, say Go Back.
 
 misunderstand: I didn't understand. To continue, say Ready.
 
-wait: No problem. Say, Alexa Repeat, to come back to this exercise. <break time="10s"/><break time="10s"/> To start your exercise again, say Repeat.
+wait: No problem. Say my wake word and then say Repeat, to come back to this exercise. <break time="10s"/><break time="10s"/> To start your exercise again, say Repeat.

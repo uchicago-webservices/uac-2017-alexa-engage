@@ -84,7 +84,7 @@ def wait_question():
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title="Waiting...", 
-		content='Say "OK" to continue.'
+		content='Say "Repeat" to go back to the exercises.'
 		).reprompt(render_template('exercise_options'))
 
 
@@ -196,7 +196,7 @@ def help():
 	msg = '<speak>'+msg+'</speak>'
 	return question(msg).simple_card(
 		title='Help with EngAGE Exercise', 
-		content='"READY" or "OK" to go to the next exercise.\n"REPEAT" to hear again.\n"WAIT" for extra time.\n"STOP" to quit at any time.'
+		content='"READY" or "OK" to go to the next exercise.\n"REPEAT" to hear again.\nInterrupt with my wake word (e.g. Alexa or Echo).\n"WAIT" for extra time.\n"STOP" to quit at any time.'
 		).reprompt(render_template('exercise_options'))
 
 
