@@ -4,7 +4,7 @@ continue_prompt: <break time="1s"/> OK to continue?
 
 monday_intro: Let's get moving! We will work on balance, strength, and flexibility. For todays exercises, you will need an armless chair and a wall. <break time="1s"/> During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time. To begin, say O K.
 
-tuesday_intro: Welcome to Engage exercise! We are going to do activities to improve balance, strength, and flexibility. Today you will need a chair, and hand weights. Water bottles or soup cans will do. You may also need to use a wall for balance. <break time="1s"/> The last exercises will be done on the floor. <break time="1s"/> During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time. To start, say O K.
+tuesday_intro: Welcome to Engage exercise! We are going to do activities to improve balance, strength, and flexibility. <break time="1s"/> Today you will need a chair, and hand weights. Water bottles or soup cans will do. <break time="3s"/> You may also need to use a wall for balance. <break time="2s"/> The last exercises will be done on the floor. <break time="1s"/> During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time. To start, say O K.
 
 saturday_intro: Welcome to your weekend routine with Engage exercise! We are going to do activities to improve balance, strength, and flexibility. Today you will need a chair, and some hand weights. Water bottles or soup cans will do. <break time="1s"/> Some exercises will require a wall. <break time="1s"/>  During our exercises, you can say Ready, Wait, Repeat, Help, or Stop, at any time. Ready to begin?
 
