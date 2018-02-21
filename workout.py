@@ -41,33 +41,63 @@ def photo_url_prefix():
 	return 'https://s3.amazonaws.com/engage-alexa-exercise-photos/'
 
 
-def exercise_question():
+def exercise_reply_info():
+	d = dict()
 	exercise_no = session.attributes['exercise_no'] - 1
-	template_name = session.attributes['exercises'][exercise_no]['template_name']
-	exercise_title = str(session.attributes['exercise_no'])+'. '+session.attributes['exercises'][exercise_no]['exercise_name']
-	card_text = session.attributes['exercises'][exercise_no]['card_text']
+	d['template_name'] = session.attributes['exercises'][exercise_no]['template_name']
+	d['title'] = str(session.attributes['exercise_no'])+'. '+session.attributes['exercises'][exercise_no]['exercise_name']
+	d['content'] = session.attributes['exercises'][exercise_no]['card_text']
 
 	if (session.attributes['exercises'][exercise_no]['photo']):
-		photo_url = photo_url_prefix()+session.attributes['exercises'][exercise_no]['photo']
+		d['image_url'] = photo_url_prefix()+session.attributes['exercises'][exercise_no]['photo']
 	else:
-		photo_url = False
+		d['image_url'] = False
 
-	msg = ' '+render_template(template_name)
+	return d
+
+
+def exercise_question():
+	reply = exercise_reply_info()
+
+	msg = ' '+render_template(reply['template_name'])
 	msg = '<speak>'+msg+'</speak>'
 
-	if (photo_url == False):
+	if (reply['image_url'] == False):
 		return question(msg).simple_card(
-				title=exercise_title,
-				content=card_text
+				title=reply['title'],
+				content=reply['content']
 				).reprompt(render_template('exercise_options'))	
 
 	else:
 		return question(msg).standard_card(
-				title=exercise_title,
-				text=card_text,
-				small_image_url=photo_url,
-				large_image_url=photo_url
+				title=reply['title'],
+				text=reply['content'],
+				small_image_url=reply['image_url'],
+				large_image_url=reply['image_url']
 				).reprompt(render_template('exercise_options'))	
+
+
+def exercise_statement():
+	reply = exercise_reply_info()
+
+	msg = ' '+render_template(reply['template_name'])+' '+render_template('done')
+	msg = '<speak>'+msg+'</speak>'
+
+	card_content = reply['content']+ "\n\n You are done!"
+
+	if (reply['image_url'] == False):
+		return statement(msg).simple_card(
+				title=reply['title'],
+				content=card_content
+				)
+
+	else:
+		return statement(msg).standard_card(
+				title=reply['title'],
+				text=card_content,
+				small_image_url=reply['image_url'],
+				large_image_url=reply['image_url']
+				)
 
 
 def misunderstand_question():
@@ -102,7 +132,7 @@ def start_session():
 def next():
 	session.attributes['exercise_no'] = session.attributes['exercise_no'] + 1
 
-	if session.attributes['exercise_no'] > session.attributes['exercise_total']:
+	if session.attributes['exercise_no'] >= session.attributes['exercise_total']:
 		return False
 	
 	return True
@@ -122,16 +152,7 @@ def ready(phrase):
 
 	if (phrase in ready_phrases):
 		if (next() == False):
-			photo_url = photo_url_prefix()+'finding_activities_you_enjoy.png'
-			msg = render_template('done')
-			msg = '<speak>'+msg+'</speak>'
-			return statement(msg).standard_card(
-					title="You are done!",
-					text="Lets exercise again soon!",
-					small_image_url=photo_url,
-					large_image_url=photo_url
-					)
-
+			return exercise_statement()
 		return exercise_question()
 
 	if (phrase in repeat_phrases):
@@ -173,9 +194,7 @@ def godirectly(exercise_no):
 	msg = ''
 
 	if (next() == False):
-		msg = msg+' '+render_template('done')
-		msg = '<speak>'+msg+'</speak>'
-		return statement(msg)
+		return exercise_statement()
 
 	return exercise_question()
 
