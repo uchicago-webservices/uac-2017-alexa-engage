@@ -1,6 +1,8 @@
 READY_PHRASES
 
 ready
+eddy
+dee
 yes
 yeah
 yeh

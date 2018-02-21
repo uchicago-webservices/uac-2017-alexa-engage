@@ -146,7 +146,7 @@ def launch():
 
 @ask.intent("ReadyIntent")
 def ready(phrase):
-	ready_phrases = ['ready','yes','go','next','OK','skip','resume', 'o.k.', 'okay', 'k', 'yeah', 'yeh']
+	ready_phrases = ['ready','yes','go','next','OK','skip','resume', 'o.k.', 'okay', 'k', 'yeah', 'yeh','eddy']
 	not_ready_phrases = ['wait','pause','not ready','no']
 	repeat_phrases = ['repeat','again','go back']
 
