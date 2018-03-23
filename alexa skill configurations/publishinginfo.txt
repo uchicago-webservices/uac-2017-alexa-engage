@@ -21,7 +21,7 @@ Please write a review or contact us at engage@lists.uchicago.edu.
 
 
 Example phrases:
-1. alexa start engage
+1. alexa start engage beta; alexa start engage exercise; alexa start engage workout
 2. ready
 3. help
 
