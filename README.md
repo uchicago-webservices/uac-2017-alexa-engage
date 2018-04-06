@@ -85,6 +85,9 @@ Log in at https://developer.amazon.com. Go to the Alexa section, Alexa Skills. S
 
 Test in test the Alexa skill Test tab. The invocation phrase should be 'Alexa start engage beta'.
 
+### Static Assets ###
+Photos and audio files are hosted at https://s3.amazonaws.com/engage-alexa-exercise-photos/. You can find this after logging in at awslogin.uchicago.edu. Make sure to make all fiels public!
+
 ## ImportError ##
 
 If you have trouble deploying again (maybe you get an ImportError), trying using venv.zip instead of the venv directory you created with the above instructions.

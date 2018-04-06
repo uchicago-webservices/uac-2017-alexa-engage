@@ -1,0 +1,29 @@
+Publishing Information
+
+Category: Health & Fitness
+
+
+Testing Instructions:
+Say "Start Engage Beta".
+
+The routine is determined by the day of the week. To try a different routine say "Tell Engage Beta to use the Monday routine".  You can also use "Tuesday" and "Saturday" in place of "Monday".
+
+
+Short Skill Description: Fitness skill for adults >= 65
+
+
+Full Skill Description:
+EngAGE Exercise is a fitness skill tailored to adults >= 65 to promote strength, balance, and flexibility. It guides users through a series of daily exercises based on the Go4Life program developed by the National Institute on Aging. Routines change daily (Mon/Wed/Fri, Tues/Thur, Sat/Sun) to target different muscles.
+
+The current version of this skill is a proof of concept to test the feasibility of using an Alexa skill for encouraging adults >= 65 to stay active and to maintain long-term independence. Your feedback is welcome! Future improvements may include customized routines based on personal preferences/needs, a broader scope of exercises, and programs adapted to different skill levels (eg., very low intensity, low intensity, moderate intensity, and high intensity). 
+
+Please write a review or contact us at engage@lists.uchicago.edu.
+
+
+Example phrases:
+1. Alexa, start Engage Exercise.
+2. Ready.
+3. Help.
+
+
+Keywords: seniors,exercise,workout,elder,elderly,go4life,engage
